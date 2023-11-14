@@ -1,0 +1,2279 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EpicSpells",
+				"abbreviation": "ES",
+				"full": "Epic Spells",
+				"url": "",
+				"authors": [
+					"Ryan Servis"
+				],
+				"convertedBy": [
+					"Arin Magnus"
+				]
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Adjure Purity",
+			"source": "EpicSpells",
+			"page": 137,
+			"level": 11,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a white silken cloth that has never been dirtied"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unleash a scouring torrent of purifying energy at a creature of your choice within range. The target gains the following benefits.",
+				"• It is freed from non-Epic and Epic curses.",
+				"• It is cured of the {@condition blinded}, {@condition deafened}, {@condition exhaustion},",
+				"{@condition paralyzed}, {@condition petrified}, and {@condition stunned} conditions.",
+				"• Any reduction to the creature’s hit point maximum is removed.",
+				"• It is cured of any harmful non-Epic and Epic magical effects that last longer than 1 minute.",
+				"• It is cured of any non-Epic or Epic poisons and diseases.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, you may target an additional creature within range."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Affair of Honor",
+			"source": "EpicSpells",
+			"page": 137,
+			"level": 10,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a written contract between both participants, signed in blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You issue a binding magical threat to an enemy creature that can hear you within range, challenging it to honorable combat.",
+				"The target instinctively understands the nature of your challenge, even if you do not share a language, and can choose to accept (no action required). If it accepts, both you and the creature gain resistance to all damage from all other creatures, and you both deal half damage to all other creatures. Additionally, neither you nor the creature can willingly move away from each other, nor can either of you willingly benefit from effects produced by friendly creatures. The spell ends early if you or the affected creature yields or is slain. At Higher Tiers. When you cast this spell as a tier 2 Epic spell or higher, the potency of the enchantment improves. When you cast this spell as a tier 2 Epic spell, both you and the",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the potency of the enchantment improves. When you cast this spell as a tier 2 Epic spell, both you and the target are immune to damage from all other creatures but cannot deal damage to all other creatures. When you cast this spell as a tier 3 Epic spell, both you and the creature are immune to effects from friendly creatures unless you choose to be affected. If either of you chooses to be affected, the spell immediately ends. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"Casting this Epic spell as a ritual increases its casting time to 1 hour. When you cast this spell as a ritual, a 300-foot cube of force forms around you and the target creature and all other creatures within the cube are magically teleported outside of its area. For the duration of the spell, creatures cannot enter or exit the cube by non-Deific means."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Anatomy Augmentation",
+			"source": "EpicSpells",
+			"page": 139,
+			"level": 11,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an herbal steroid of your own design"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"A creature you touch is mystically enhanced, increasing its biological characteristics to a grotesque and excessive degree.",
+				"Choose a single ability score; the creature’s ability score you selected and its ability score maximum increase by 10, to a maximum of 30.",
+				"Additionally, if the target is not proficient in saving throws or ability checks with the chosen ability, it instead becomes proficient. This spell immediately ends if you cast it again before the duration ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Antimagic Ray",
+			"source": "EpicSpells",
+			"page": 139,
+			"level": 10,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an iron golem’s knuckle"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A black beam of antimagic surges from your finger, hungrily seeking out the presence of magic.",
+				"Choose one creature, object, or magical effect within range. Any non-Epic spell and a single tier 1 Epic spell on the target ends. If the target is under the effects of a tier 2 Epic spell or higher, you may choose to instead not end a single tier 1 Epic spell on the target (if any) and instead attempt an ability check using your spellcasting ability to end an Epic spell of a higher tier. The DC equals 24 for a tier 2 Epic spell and 28 for a tier 3 Epic spell. On a successful check, the spell ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell, you instead automatically end the effects of single tier 2 Epic spell. When you cast this spell as a tier 3 Epic spell, you automatically end the effects of a single tier 3 Epic spell. "
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Apocalypse",
+			"source": "EpicSpells",
+			"page": 139,
+			"level": 12,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of dust from a destroyed world"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You bring about ruination on an inconceivable scale, sparing none from your destructive magic.",
+				"You unleash destruction in a 1-mile-radius aura that is centered on you and moves with you. At the end of each of your turns, a 100-foot cube centered on a point of your choice within the affected area experiences an apocalyptic cataclysm. Creatures, objects, and structures within the affected area have their hit point maximums reduced by {@dice 50d6}. An affected creature can attempt a Constitution saving throw, halving this reduction on a success. A creature that fails this saving throw by 5 or more instead has its hit point maximum reduced by {@dice 100d6}. This reduction lasts until the spell ends. A creature, object, or structure that has its hit point maximum reduced to 0 in this manner collapses to ashes.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, the casting time is increased to 100 days. When you begin casting this spell as a ritual, you must designate a willing deity with a divine rank of greater deity or higher to provide the power behind the spell. Over the course of the spell’s casting, you must honor the sponsoring deity with ritualistic sacrifices, extravagant prayers, and other acts of faith that are appropriate to its portfolio. If the ritual is interrupted or fails during this time, both you and the sponsoring deity are destroyed utterly and cannot be restored to life by any means. When you finish casting the spell in this manner, the apocalypse begins. Seas boil, the ground splits open, volcanoes erupt, and the sky rains death. On initiative count 20 (losing initiative ties), everything on the plane has its hit point maximum reduced by {@dice 100d6}. At the end of the spell’s duration, the plane explodes, and everything remaining on it is obliterated."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Arcane Embargo",
+			"source": "EpicSpells",
+			"page": 140,
+			"level": 11,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a spell scroll of a 9th-level spell from the school of magic you wish to embargo"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You completely ban the use of magic from a certain school by generating a discriminatory field of antimagic.",
+				"A 100-foot cube of antimagic appears, centered on a point you can see within range. When the cube appears, you must choose a school of magic against which the cube will ward. Non-Epic and Epic spells of the chosen school cast within the affected area automatically fail and any resources used in the attempt are expended. This spell ends early if you cast it again before the duration ends. ",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"If you cast this spell as a tier 3 Epic spell, you may designate a second school of magic against which the affected area becomes warded against"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 2 hours. When you cast the spell in this manner, its affected area instead becomes a 10-mile-radius aura centered on a point you can see within range."
+					]
+				}
+			]
+		},
+		{
+			"name": "Army of Darkness",
+			"source": "EpicSpells",
+			"page": 140,
+			"level": 11,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a jar of humanoid teeth, each of which must be at least 1,000 years old"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You create legions of undead that swarm across the battlefield, tearing apart any who stand against you.",
+				"The ground within 120 feet of you erupts with the shambling corpses of undead that remain partially trapped beneath the earth. The affected area becomes difficult terrain for creatures of your choice, and you become aware of the exact location of any creature within the affected area. Additionally, when the undead appear, as an action on each of your turns, you may force the undead to lash out and make a single melee spell attack targeting any number of creatures of your choice within the affected area. On a successful hit, a target takes {@damage 10d8} necrotic damage from the undead assault and can be pushed up to 30 feet in a straight line in a direction of your choice.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, the damage dealt by the undead on a successful hit increases by {@damage 10d8} necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 24 hours. When the spell is cast, the affected area is increased to a 1-mile radius centered on you that also moves with you for the spell’s duration, and the duration is increased to 1 week."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/army-of-darkness.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ashran’s Arcane Absorption",
+			"source": "EpicSpells",
+			"page": 141,
+			"level": 10,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a preserved globule of a black pudding in a glass sphere"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Invented by the tiefling ascendant Ashran Firebrand to protect himself against magical assassination attempts by his fiendish father, this spell negates and absorbs non-Epic magic and repurposes it for the caster’s personal use.",
+				"When you cast this spell, you are encased in a sheath of antimagic specially designed to negate enemy spells. While so encased, as a reaction when you would be affected by a non-Epic spell, you may absorb the spell and gain its magic. The absorbed spell’s effect against you is prevented and any spells absorbed in this manner with a duration greater than instantaneous immediately end. Immediately after you absorb a spell, you generate a temporary spell slot of a level one lower than the level of spell you just absorbed (minimum of 1st level; absorbing cantrips does not generate temporary spell slots), which can be used to cast spells as though it were one of the spell slots gained through your class spellcasting feature. These temporary spell slots last for the duration and are lost when absorption ends. Using this spell, you may absorb up to 10 total spell levels over its duration. If you would attempt to absorb the effects of a spell that would put you over this maximum, the spell’s effect is prevented, and this spell immediately ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, you can absorb 5 additional levels of spells for each tier beyond tier 1. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Bioclasm",
+			"source": "EpicSpells",
+			"page": 141,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a perfectly ripe avocado"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A swirling ball of concentrated life energy erupts with a roar from your hands to a point you choose within range.",
+				"Each creature of your choice in a 60-foot-radius sphere centered on a point within range regains 200 hit points and is cured of any non-Epic or Epic poisons and diseases.",
+				"Additionally, if bodies of any creatures slain in the last 24 hours are in the spell’s area, you may restore those creatures to life if their souls are free and willing to return. Affected creatures return with 100 hit points or their hit point maximum, whichever is lower.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, it restores an additional 100 hit points to affected creatures, both living and those restored to life. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Bloodbane",
+			"source": "EpicSpells",
+			"page": 142,
+			"level": 11,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You can forcibly extract the raw life force from others, consuming the raw life energy to heal your wounds.",
+				"When you cast this spell, and as an action on each of your turns over its duration, a flesh-and-blood creature you can see within range must succeed on a Constitution saving throw or take {@dice 20d8} points of necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Creatures with more hit points than your current hit point total have Epic disadvantage on this saving throw. "
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/bloodbane.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Caldera",
+			"source": "EpicSpells",
+			"page": 142,
+			"level": 11,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an obsidian figurine in the shape of a dragon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You superheat the ground of an area within range, converting it to molten lava.",
+				"The area of lava is difficult terrain and consists of ten 10-foot cubes, each of which must have been previously occupied by solid ground and be adjacent to at least one other cube. When a creature enters the area for the first time on its turn or starts its turn there, it takes {@damage 20d8} fire damage and must attempt a Constitution saving throw or be {@condition incapacitated} by the extreme heat until the start of its next turn. A successful saving throw halves the damage and prevents the {@condition incapacitated} condition.",
+				"At the start of each of your turns while you concentrate on this spell, the fire damage dealt by the spell increases by {@dice 2d8} (to a maximum of {@dice 40d8}), and you may convert two additional 10-foot cubes of ground to lava in spaces you can see adjacent to at least one other cube of lava. "
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Call of the Lance",
+			"source": "EpicSpells",
+			"page": 143,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an adamantine lance"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You call a mighty mount to serve you faithfully in battle against any foe, shaped by your courage and worthiness as a rider.",
+				"A powerful mount appears in an unoccupied space of your choice within range. The mount has the following statistics ({@creature Epic Mount|epicspells}) and is a celestial, dragon, fiend, or plant (your choice). The mount comes equipped with barding that vanishes if removed. The mount immediately disappears if you cast this spell again, it is slain, or you willingly treat the mount as though it were not a friend or ally. Whenever the mount disappears, it leaves behind any objects it was carrying or wearing besides its barding.",
+				"The mount is friendly toward you and your allies. It serves you unquestioningly, sharing your goals and motivations. A creature riding the mount controls its action in combat, and the mount shares its turn with its rider. While the mount is within 1 mile of you, you can communicate with it telepathically.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"If you cast this spell at tier 2 or higher, the mount’s hit point maximum is increased by 150 hit points for each tier higher than tier 1. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 1 hour. When the spell is cast, the duration of the ritual increases to permanent."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cast Down",
+			"source": "EpicSpells",
+			"page": 143,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a holy symbol touched by a deity"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Developed by Janon the Godbreaker, this ritual can make a deity temporarily mortal and strand it on a mortal plane.",
+				"You afflict a creature you can see within range with an Epic curse, sealing away its divine power. For the spell’s duration, Deific effects produced by the creature are instead Epic effects. Once a creature has been affected by this spell, it cannot be affected by this spell again until 100 years have passed. ",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"Casting this spell as a ritual increases its casting time to 7 days. When you begin casting the spell in this manner, you must name a deity to be the target of the spell. When you do so, the deity becomes aware of you, what you are doing, and your exact location for as long as you are casting the spell. When the spell is cast, the target deity falls from the sky, landing in a holy site, church, or place of religious significance dedicated to it. The landing causes a catastrophic explosion, dealing {@damage 100d10} force damage to everything within 1,000 feet of the point of impact. For the next 24 hours, the deity is bound and is prevented from moving farther than 500 feet from the impact area by any means. The bound deity is no manifestation, avatar, or visage but a full-fledged god. The deity almost always views being summoned in such a manner as an unforgivably hostile act. If the deity is slain over the course of the ritual’s duration, it is permanently destroyed and cannot be restored to life by any means."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/cast-down.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Catastrophe",
+			"source": "EpicSpells",
+			"page": 144,
+			"level": 10,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of earth taken from a dead world"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Your touch infects a creature with a dangerous infusion bearing the essence of death. ",
+				"You make a single melee spell attack against a creature within range. On a successful hit, the target becomes wreathed in negative energy for 1 minute. When a target so wreathed would regain hit points, the negative energy prevents the creature from regaining those hit points and it instead loses the same number of hit points. Once the spell prevents a target from regaining 200 hit points in this manner, the effect ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the amount of hit points the spell can prevent the target from regaining increases by 100 per tier above tier 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Celestial Tempest",
+			"source": "EpicSpells",
+			"page": 144,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a holy book sanctified by a deity"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"The heavens roil with divine energy as you unleash a storm of divine proportions. Storm clouds appear in the shape of a cylinder that is 1,000 feet tall and 1 mile in diameter, centered on a point within range that is at least 10,000 feet directly above you. The spell fails if you can’t see a point in the air where the clouds could appear. When the spell is cast, each creature in or beneath the storm clouds’ area senses the overwhelming divine power you wield and may offer a prayer (no action required) to beg for mercy. You become aware of any creatures that offer a prayer in this manner and may use this knowledge to spare them from the spell’s effects.",
+				"The spell causes the following effects to occur over the course of its duration.",
+				{
+					"type": "entries",
+					"name": "Breath of the Gods",
+					"entries": [
+						"Hurricane-force winds batter both the area of the spell and the area beneath the stormfront, tearing rooftops off buildings and blowing away anything not tied down. At the start of your turn, all objects in the area take 5 bludgeoning damage. Creatures of your choice that are exposed to these winds have Epic disadvantage on ranged attack rolls. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pronounce Judgment",
+					"entries": [
+						"As a bonus action on each of your turns, you may call down up to three bolts of divine wrath from the stormfront to three separate points in or beneath the spell’s area. Each creature within 10 feet of one of these points must attempt a Dexterity saving throw, taking {@damage 5d10} righteous or vile damage (your choice) plus {@damage 5d10} lightning damage on a failure, or half as much damage on a success. A creature cannot take damage from this effect more than once per turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rain of Destruction",
+					"entries": [
+						"Smiting force drives down in waves as though it were rain. At the start of your turn, creatures of your choice in and beneath the spell’s area take {@dice 4d6} righteous or {@damage 4d6} vile damage (your choice)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 7 days. When you cast the spell in this manner, the clouds produced by the spell cover the entire plane, subjecting it to the spell’s effects. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Congruent Spellward",
+			"source": "EpicSpells",
+			"page": 144,
+			"level": 11,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a prism containing impossible geometry"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You create a perfectly designed field of magical protection that emanates from you in a 30-foot radius.",
+				"Until the spell ends, the field moves with you and is centered on you. When you cast this spell, you select a damage type, such as radiant or fire damage. You and creatures of your choice within 30 feet of you are immune to that damage type. As an action while this spell is in effect, you can extend the radius of this spell’s effect to 300 feet until the start of your next turn.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, you may select an additional damage type. Creatures affected by the spell also gain immunity to this damage type."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 2 hours. When you cast the spell in this manner, the spell may instead be centered on an object within 30 feet of you, and the effect lasts for 8 hours. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Crescent Cleave",
+			"source": "EpicSpells",
+			"page": 145,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rock from the moon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You slice the air with a weapon, unleashing a wave of cleaving force that cuts your enemies in twain.",
+				"As an action when you cast this spell, you make a melee weapon attack against a creature within reach using a weapon you are holding. On a successful hit, the target takes an additional {@damage 14d12} radiant damage, and until the end of your turn you may make this attack again against a different creature within reach. This effect is cumulative, to a maximum number of creatures equal to your spellcasting ability modifier."
+			]
+		},
+		{
+			"name": "Crimson Winds of Havoc",
+			"source": "EpicSpells",
+			"page": 145,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a razor used to slit the throat of a king"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call down a howling cyclone of razor-sharp blades to a point you can see on the ground within range.",
+				"The cyclone is a 30-foot-radius, 1-mile-high cylinder centered on a point in range. Until the spell ends, you can use your action to move the cyclone up to 120 feet in any direction along the ground. The cyclone sucks up any Huge or smaller objects (including ammunition fired from ranged weapons) that aren’t secured to anything and aren’t being worn or carried.",
+				"When a creature enters the cyclone’s area for the first time on a turn or starts its turn there, it must succeed on a Strength saving throw or become {@condition restrained} and take {@damage 20d6} slashing damage. A successful saving throw prevents the {@condition restrained} condition and halves the damage. Creatures larger than Huge automatically succeed on Strength saving throws against this spell. Creatures that fail a Strength saving throw against this spell are drawn 100 feet up into the air. Creatures in the air inside the spell’s area move with the cyclone and fall when the spell ends or when they leave the spell’s area. Objects and structures in the spell’s area take 120 slashing damage at the end of each of your turns.",
+				"A creature {@condition restrained} by the spell may use an action to attempt a Strength (Athletics) or Dexterity (Acrobatics) ability check against your spell save DC. On a success, the creature is no longer {@condition restrained} and is hurled 200 feet in a straight line away from the cyclone in a random direction."
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Crown of Vermin",
+			"source": "EpicSpells",
+			"page": 145,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an ancient insect encased in amber"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/crown-of-vermin.PNG"
+						}
+					}
+				]
+			},
+			"entries": [
+				"You conjure a cloud of buzzing, swarming insects that emanate from you in a 15-foot radius and act as a living shield.",
+				"Until the spell ends, the cloud moves with you and is centered on you, and grants you 200 temporary hit points, which last for the duration and cannot be replaced by temporary hit points from another source. The spell ends early if the temporary hit points granted from this spell are reduced to 0.",
+				"If a creature moves into the spell’s area for the first time on its turn or starts its turn there, you lose {@dice 5d8} temporary hit points and the creature takes an equal amount of piercing damage as the insects attack it.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, you increase the temporary hit points granted by the swarm by 100 per tier above tier 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dematerialize",
+			"source": "EpicSpells",
+			"page": 146,
+			"level": 11,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object never seen by mortal eyes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A creature you touch becomes imperceptible to all senses, seemingly vanishing from existence.",
+				"The target becomes {@condition invisible}, along with everything it is wearing while those items remain on its person. Additionally, the target is hidden (detect DC equal to your spell save DC). Creatures under this effect cannot be seen by creatures with truesight, though such creatures have Epic advantage on ability checks to detect the target.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 4 hours. When you cast the spell in this manner, you may target an object or structure within reach. When you target an object in this manner, the spell’s duration becomes permanent. This effect ends early if you cast the spell again. "
+					]
+				}
+			],
+			"conditionInflict": [
+				"invisible"
+			]
+		},
+		{
+			"name": "Demecius’s Divine Intercession",
+			"source": "EpicSpells",
+			"page": 146,
+			"level": 10,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "you or an ally within range would take damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Used by Demecius the hill dwarf ascendant to protect a fallen deity of light from the forces of evil, this spell wards an ally in imminent danger against all harm.",
+				"You point at an ally within range and shield the ally in a nimbus of silver light until the start of its next turn. While so shielded, a creature is immune to all types of damage.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the magical shield increases in potency. When you cast this spell as a tier 2 Epic spell, a shielded creature is also immune to the {@condition grappled}, {@condition restrained}, and {@condition stunned} conditions. When you cast this spell as a tier 3 Epic spell, in addition to the effects from casting it as a tier 2 Epic spell, you may magically teleport the target to an unoccupied space within 5 feet of you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Determinism",
+			"source": "EpicSpells",
+			"page": 146,
+			"level": 11,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a diamond from a parallel universe"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You curse a creature you are aware of within range, altering its fate to determine its future actions.",
+				"When the target attempts to take its action on each of its turns, it must offer you an alternative action that it is able to take that cannot be the same type of action as the first. You select which action the creature must take between the two options presented. The creature need not tell you what it will do with these actions or how they work, only that it wishes to take them.",
+				"At the end of each of its turns, the creature may attempt a Wisdom saving throw to end the effect. If the creature succeeds on two Wisdom saving throws in this manner, the spell ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, you increase the number of successful Wisdom saving throws the creature must make to end the spell by one, to a total of three."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dimensional Mastery",
+			"source": "EpicSpells",
+			"page": 146,
+			"level": 10,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a compass that doesn’t point north"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You enchant yourself with the ability to manipulate dimensional space within a 60-foot radius.",
+				"When you cast the spell and as an action on each of your turns for the duration, you can teleport any number of creatures you can see within the spell’s area to different unoccupied spaces you can see within the spell’s area. An unwilling creature must succeed on a Charisma saving throw to prevent this movement.",
+				"Additionally, as a reaction to when a creature you can see within the spell’s area casts a spell or uses a feature that would magically teleport it to a different location, such as a dimension door spell or a conjuration wizard’s Benign Transposition feature, you can force that creature to attempt a Charisma saving throw, preventing the teleportation on a failure.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the radius of the spell increases by 60 feet for each tier higher than tier 1, to maximum of 180 feet at tier 3."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dreamscape",
+			"source": "EpicSpells",
+			"page": 147,
+			"level": 12,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dream journal containing 1,000 entries"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A wave of eldritch energy flows from you in a 150-foot-radius aura, allowing your dreams to influence reality.",
+				"Until the spell ends, the aura moves with you and is centered on you. When a creature enters the spell’s area for the first time on its turn or starts its turn there, you may force it to attempt an Intelligence saving throw. On a failure, it is pulled into a dreamlike state for as long as it remains within the spell’s area. Creatures can choose to forgo the saving throw and willingly enter this dreamlike state.",
+				"When you cast a spell within the aura’s area, you may cast that spell as a dreamspell instead. Dreamspells have the following properties, in addition to their normal effects.",
+				"• Creatures not in a dreamlike state cannot be affected",
+				"by the spell.",
+				"• The spell requires no verbal, somatic, or material",
+				"components.",
+				"• If the spell is cast as an 8th-level or lower spell, it is",
+				"instead cast as a 9th-level spell."
+			]
+		},
+		{
+			"name": "Dungeon Delver’s Delight",
+			"source": "EpicSpells",
+			"page": 147,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a solid gold cornucopia that has fed a million mouths"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Created by the famous dungeoneer Mark Maximus, this spell creates an extravagant camping site that provides you with all the necessities to brave the horrors in a nearby dungeon.",
+				"You choose a point within range and transform it into a wondrous campsite, producing the following effects within a 100- foot radius, which last for the duration.",
+				{
+					"type": "entries",
+					"name": "Fantastic Feast",
+					"entries": [
+						"An extravagant feast appears before you, able to feed up to twenty individuals of Gargantuan size or smaller. A creature must spend 1 hour consuming the feast to gain the following benefits for 24 hours."
+					]
+				},
+				"• The creature gains the benefits of a heroes’ feast spell.",
+				"• The first magical potion the creature drinks after consuming the feast has its duration increased to the duration of the feast’s effect.",
+				"• When the creature is reduced to 0 hit points for the first time, it may choose to be immediately magically teleported to the location of the feast.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"Casting this spell as a ritual increases its casting time to 1 hour. When you cast this spell as a ritual, it produces the following effect within its affected area, and its duration is increased to 24 hours. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Warding Campfire",
+					"entries": [
+						"A roaring fire supplies warmth to any who rest near it, which causes the following effects within the affected area."
+					]
+				},
+				"• Allies that finish a long rest recover all their spent Hit Dice instead of half of their total Hit Dice.",
+				"• All non-Epic weather effects that would be harmful or unpleasant to creatures within the area are suppressed.",
+				"• You are telepathically alerted if an enemy creature attempts to enter the area without your express permission."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/dungeon-delvers-delight.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Energy Renewal",
+			"source": "EpicSpells",
+			"page": 147,
+			"level": 11,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You envelop yourself in a mantle of positive energy that converts your magic into healing power.",
+				"For the spell’s duration, when you cast a non-Epic spell of 1st level or higher that expends a spell slot granted by your class spellcasting feature, you regain {@dice 3d8} hit points for each level of the spell slot expended. If you cast an Epic spell, you instead gain 50 hit points for each tier of the spell, to a maximum of 150 hit points for a tier 3 Epic spell.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, its healing powers become more potent. You increase the number of hit points you regain when you cast a non-Epic spell by an additional {@dice 3d8} for each level of the spell slot expended. Additionally, you increase the amount of hit points gained from casting an Epic spell by 25 for each tier of the spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "Enigma Masque",
+			"source": "EpicSpells",
+			"page": 148,
+			"level": 10,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a portrait of a forgotten hero"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conceal a creature you touch in a magical mask that protects its identity and grants it a fictional persona of your own design.",
+				"As a part of casting the spell, you must fabricate an entirely new character of the same size and type as the affected creature. You determine the character’s name, personality, background, alignment, and any other details by which you wish others to know the character. For the duration of the spell, the target has a +10 bonus on Charisma ability checks to maintain the persona and convince others of its validity. The first time another creature perceives the target, it must attempt an Intelligence saving throw. On a failure, the creature becomes completely convinced the target is the persona, even if common sense would indicate otherwise, and it has Epic disadvantage on Charisma and Wisdom ability checks against the target. An affected creature will even fabricate false memories to stretch reason to ridiculous degrees if necessary to believe the persona. If the true nature of the target is revealed through incontrovertible proof to an affected creature, the effect ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell at a tier higher than tier 1, you may affect up to two additional creatures within reach for each tier above tier 1. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 8 hours. When you cast the spell in this manner, its duration is increased to permanent and you no longer need to concentrate to maintain its effects for the duration."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Equinox",
+			"source": "EpicSpells",
+			"page": 148,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an emerald cut in the shape of a maple leaf"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You tap into the inherent balance of nature, creating a field of life or death in a 60-foot radius centered on you.",
+				"When you cast this spell, you determine whether the aura will be one of positive or negative energy for the spell’s duration. Until the spell ends, the aura moves with you and is centered on you.",
+				"If you select positive energy, when you cast this spell and at the start of each of your turns over the duration, creatures of your choice within the area are bathed in healing energy. Affected creatures regain {@dice 20d10} hit points, are cured of the {@condition blinded}, {@condition deafened}, {@condition petrified}, {@condition poisoned}, and {@condition stunned} conditions, and their {@condition exhaustion} is reduced by one level.",
+				"If you select negative energy, when you cast this spell and at the start of each of your turns over the duration, creatures of your choice within the area lose {@dice 20d10} hit points, gain one level of {@condition exhaustion}, and cannot be immune to the {@condition blinded}, {@condition deafened}, {@condition exhaustion}, {@condition petrified}, {@condition poisoned}, and {@condition stunned} conditions for as long as they remain in the spell’s area."
+			]
+		},
+		{
+			"name": "Exalted Brand of Absolution",
+			"source": "EpicSpells",
+			"page": 148,
+			"level": 11,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a jar of silver paint mixed with holy water"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You invoke divine justice and attempt to mystically brand another you deem deserving.",
+				"You make a melee spell attack against a creature you can reach. On a hit, you curse the creature with a holy brand written in the words of creation, the language of pure good. A creature so cursed cannot lie or attempt to deceive others, deals half damage on its attacks, and takes {@damage 6d12} righteous damage at the end of each turn in which it harms another creature. On each of its turns, a branded creature can take an action to remove the effect by praying for mercy and attempting a Charisma (Persuasion) check against your spell save DC. Mythic creatures automatically succeed on this ability check. On a successful check, the effect ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 3 Epic spell, an affected creature takes {@dice 6d12} additional righteous damage at the end of each of its turns in which it harms another creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 1 hour. When you cast the spell in this manner, an affected creature that attempts a Charisma (Persuasion) check to remove the brand can only succeed if it is speaking to you in person when it does so."
+					]
+				}
+			]
+		},
+		{
+			"name": "Final Death",
+			"source": "EpicSpells",
+			"page": 149,
+			"level": 10,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "two copper coins more than 1,000 years old"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You touch the remains of a creature that has died within the last 24 hours, locking its soul away in the afterlife forever.",
+				"The affected creature cannot return to life by non-Epic means, nor can it communicate with the living by non-Epic magic.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the affected creature cannot be returned to life by non-Deific means. If you cast this spell as a tier 3 Epic spell, the target cannot return to life by any known means."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 4 hours. When you cast the spell in this manner, an affected creature cannot be risen as an undead, nor can its remains be affected by any known means unless you allow it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flash Freeze",
+			"source": "EpicSpells",
+			"page": 149,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small animal encased in ice for 10,000 years"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You generate a maelstrom of frigid cold in a 20-foot radius centered on a point within range. ",
+				"Creatures in the area must succeed on a Constitution saving throw or take {@dice 10d10} points of cold damage and become frozen. A successful saving throw halves the damage and prevents the frozen condition.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the cold damage increases by {@dice 10d10} for each tier above tier 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Frozen Condition",
+					"entries": [
+						""
+					]
+				},
+				"• A frozen creature is encased in ice, which is an object that surrounds the creature, with an AC of 15 and 100 hit points. When the creature is no longer encased in ice, the condition ends.",
+				"• The creature’s speed is 0, and it cannot take actions other than attempting to break free. A creature attempting to break free from the ice must take an action to attempt a Strength (Athletics) ability check against a DC of 15 or the source’s spell save DC, whichever is higher. On a success, the condition ends.",
+				"• The creature is immune to all damage except cold and psychic damage."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/flash-freeze.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Force Armor",
+			"source": "EpicSpells",
+			"page": 150,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tiny shield of a mithral adamantine alloy"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You surround yourself with overlapping plates of magical force that fortify you against attacks.",
+				"Your AC becomes 18 + your Dexterity modifier. When you are critically hit by an attack, you can attempt a DC 30 Constitution saving throw. On a success, the critical hit instead becomes a normal hit.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"If you cast this spell as a tier 3 Epic spell, your AC instead becomes 20 + your Dexterity modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arboreal Metamorphosis",
+			"source": "EpicSpells",
+			"page": 139,
+			"level": 10,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a nut from an extinct species of tree"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You warp flesh and knit bone into plant matter, transforming one creature that you can see within range into a living wooden form. If the target’s body is made of solid matter, the creature must attempt a Constitution saving throw. On a failure, it is {@condition restrained} as its body begins to harden. On a success, the creature isn’t affected and the spell ends. A creature affected by this spell must attempt another Constitution saving throw at the end of each of its turns until the spell ends. If it succeeds three times, the spell ends. If it fails three times, the spell ends and the creature is turned to wood and permanently {@condition petrified}. The successes and failures don’t need to be consecutive; keep track of both until the spell ends.",
+				"In the creature’s new form, its body functions like a living tree of a type chosen by you, growing superficial foliage and other appropriate characteristics. If the creature is physically broken while {@condition petrified}, it suffers from similar injuries if reverted to its original state.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell, a creature need only fail a single additional saving throw over the spell’s duration after it fails the initial saving throw to become {@condition petrified}. When you cast this spell as a tier 3 Epic spell, a creature that fails the initial saving throw against this spell becomes immediately {@condition petrified}. "
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spell_images/main/arboreal-metamorphasis.PNG"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Epic Mount",
+			"source": "EpicSpells",
+			"page": 143,
+			"size": [
+				"L"
+			],
+			"type": "Epic (celestial, dragon, fiend, or plant—your choice)",
+			"alignment": [
+				{
+					"special": "your alignment"
+				}
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"barding"
+					]
+				}
+			],
+			"hp": {
+				"formula": "29d10 + 174",
+				"average": 333
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 100
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 22,
+			"int": 18,
+			"wis": 24,
+			"cha": 12,
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 0,
+			"languages": [
+				"(your languages)"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mount makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} (your proficiency bonus {@hit 5} to hit), reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage. "
+					]
+				},
+				{
+					"name": "Kick",
+					"entries": [
+						"{@atk mw} (your proficiency bonus + {@hit 5} to hit), reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage and the target is pushed 10 feet away from the mount. "
+					]
+				},
+				{
+					"name": "Call to Glory (Recharge 5–6).",
+					"entries": [
+						"The mount magically teleports up to 100 miles to an unoccupied space adjacent to you. As a reaction when the mount appears, you may mount it."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Empowered Blows",
+					"entries": [
+						"The mount’s weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Mighty Steed",
+					"entries": [
+						"While it is being ridden, the mount has Epic advantage on saving throws and ability checks."
+					]
+				},
+				{
+					"name": "Unbelievable Steed",
+					"entries": [
+						"On each of its turns, the mount can take a bonus action to take the Dash action. "
+					]
+				},
+				{
+					"name": "Skills",
+					"entries": [
+						"the mount is proficient in Athletics and Perception and uses your proficiency bonus to determine the bonus to its skills"
+					]
+				}
+			],
+			"damageTagsLegendary": [
+				"P"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		}
+	],
+	"class": [],
+	"subclass": [],
+	"classFeature": [],
+	"subclassFeature": [],
+	"spellFluff": [],
+	"legendaryGroup": [],
+	"monsterFluff": [],
+	"background": [],
+	"backgroundFeature": [],
+	"feat": [],
+	"optionalfeature": [],
+	"race": [],
+	"raceFeature": [],
+	"raceFluff": [],
+	"subrace": [],
+	"deity": [],
+	"item": [],
+	"baseitem": [],
+	"variant": [],
+	"itemProperty": [],
+	"itemType": [],
+	"itemFluff": [],
+	"itemGroup": [],
+	"itemEntry": [],
+	"psionic": [],
+	"reward": [],
+	"object": [],
+	"trap": [],
+	"hazard": [],
+	"variantrule": [],
+	"condition": [],
+	"disease": [],
+	"status": [],
+	"adventure": [],
+	"adventureData": [],
+	"book": [],
+	"bookData": [],
+	"table": [],
+	"tableGroup": [],
+	"vehicle": [],
+	"vehicleUpgrade": [],
+	"vehicleWeapon": [],
+	"action": [],
+	"cult": [],
+	"boon": [],
+	"language": [],
+	"languageScript": [],
+	"makebrewCreatureTrait": [],
+	"charoption": [],
+	"charoptionFluff": [],
+	"recipe": [],
+	"psionicDisciplineFocus": [],
+	"psionicDisciplineActive": []
+}
