@@ -5,7 +5,7 @@
 				"json": "EpicSpells",
 				"abbreviation": "ES",
 				"full": "Epic Spells",
-				"url": "",
+				"url": "https://store.2cgaming.com/products/epic-legacy-heros-handbook-promo",
 				"authors": [
 					"Ryan Servis"
 				],
@@ -876,9 +876,6 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"meta": {
-				"ritual": true
 			},
 			"entries": [
 				"Your touch infects a creature with a dangerous infusion bearing the essence of death. ",
@@ -2076,6 +2073,1158 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Genesis",
+			"source": "EpicSpells",
+			"page": 150,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of bark from a redwood treant"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gift a deserving creature with bountiful bursts of healing energy.",
+				"A living creature you can see within range regains {@dice 20d6} hit points and cures any reduction to its hit point maximum.",
+				"At the start of each of the creature’s turns for the spell’s duration, it regains {@dice 4d6} hit points. If a creature would be reduced to 0 hit points while under the effects of the spell, it regains 100 hit points and the spell ends.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, for each tier higher than tier 1, the target regains {@dice 10d6} additional hit points when the spell is cast, {@dice 2d6} additional hit points at the start of its turn, and 100 additional hit points when the target is first reduced to 0 hit points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 8 hours. When you cast the spell in this manner, you instead target each creature and object of your choice within 10 miles."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/genesis.PNG"
+						}
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Hail of Deadly Blossoms",
+			"source": "EpicSpells",
+			"page": 151,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of bark from a redwood treant"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a beautiful but deadly maelstrom of petals to poison your foes.",
+				"Until the spell ends, beautiful flower petals of lethal toxicity rain down in a 300-foot-tall cylinder with a 30-foot radius centered on a point you choose within range. Creatures within the spell’s area cannot have resistance or immunity to poison damage. When you cast the spell and at the start of each of your turns, creatures of your choice within the affected area are subjected to one of the following poisons, chosen by you.",
+				{
+					"type": "entries",
+					"name": "Delphinium Dose",
+					"entries": [
+						"A creature subjected to this poison must succeed on a Constitution saving throw or take {@damage 40d8} poison damage, or half as much on a success. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gloriosa Lily Pollen",
+					"entries": [
+						"A creature subjected to this poison must succeed on a Wisdom saving throw or take {@damage 20d8} poison damage and become {@condition incapacitated} until the start of its next turn. A successful saving throw halves the damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hydrangea Venom",
+					"entries": [
+						"A creature subjected to this poison must succeed on an Intelligence saving throw or take {@damage 10d8} poison damage, or half as much on a success. On a failure, the creature also suffers violent delusions for the duration of the spell. When a creature so deluded makes an attack roll, saving throw, or ability check, it rolls a {@dice d10} and subtracts the number rolled from the result. The affected creature can attempt an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nightshade Nectar",
+					"entries": [
+						"A creature subjected to this poison must succeed on a Strength saving throw or take {@damage 12d8} poison damage and have its speed reduced to 0 until the end of its next turn. A successful saving throw halves the damage and instead causes its speed to be halved until the end of its next turn."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Hideous Mandate",
+			"source": "EpicSpells",
+			"page": 151,
+			"level": 10,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You issue an evil command of diabolical authority to a creature that you are aware of within range.",
+				"The target must succeed on a Wisdom saving throw or suffer the effects of the command for the duration. A creature that cannot hear you is immune to the spell’s effects.",
+				"You may issue one of the following evil commands. At the DM’s discretion, you may choose a different command, but it should be no more powerful than those described here and must direct a creature toward acts of evil and violence. The DM has final say on such a command’s effect. If your command proves impossible even under ideal circumstances, the spell ends. At the end of an affected creature’s turn, it can attempt a Wisdom saving throw to end the effect on itself.",
+				{
+					"type": "entries",
+					"name": "Slay",
+					"entries": [
+						" The target experiences unfathomable animosity toward another creature you can see within range. The target does everything in its power to kill the creature as quickly as possible. The target will not defend itself if doing so would prevent it from somehow harming the creature or object that it hates."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Submit",
+					"entries": [
+						"The creature surrenders itself to its enemies. It is automatically hit by attacks and cannot take actions to defend itself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suffer",
+					"entries": [
+						"The target is racked with extraordinary pain. When it attempts to take its action, it must succeed on a DC 20 Constitution saving throw or that action fails and the target is unable to attempt that action type (action, bonus action, reaction, etc.) again that turn. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Supplicate",
+					"entries": [
+						"The target is {@condition charmed} by another creature you can see within range and does everything in its power to aid the creature. The target cannot willingly move away from the creature and will not defend itself if doing so would prevent it from somehow aiding or protecting the creature it is {@condition charmed} by."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"If you cast this spell as a tier 2 Epic spell, you can target an additional Epic creature within range or every non-Epic creature within range. If you cast this spell as a tier 3 Epic spell, in addition to the benefits gained by casting it as a tier 2 Epic spell, you may target a third Epic creature within range or increase the range of the spell to 300 feet."
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			]
+		},
+		{
+			"name": "Hungry Fissure",
+			"source": "EpicSpells",
+			"page": 151,
+			"level": 10,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fossilized dragon claw"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your magic rends the earth and opens a great maw of stone and dirt.",
+				"A great fissure 100 feet long, 30 feet wide, and 50 feet deep opens along the ground, starting in front of you and extending in a direction of your choice. A creature standing in the effect’s area can use its reaction to attempt a Dexterity saving throw to move safely to the edge of the fissure as it opens. On a failure or if unable to take a reaction, a creature large enough to fit inside the fissure falls to the bottom. If the fissure opens beneath a structure, any portion of the structure above the fissure automatically collapses. At the end of your turn, the fissure slams shut, trapping everything within underground. A creature without a burrowing speed so entrapped cannot take actions or move and must hold its breath or begin suffocating. An entrapped creature can take an action to attempt a Strength (Athletics) ability check against your spell save DC. On a success, it is no longer entrapped and can try to dig its way out by spending 4 feet of movement for every 1 foot it digs. ",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the dimensions of the fissure increase by 100 feet in length, 30 feet in width, and 50 feet in depth for each tier above tier 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Immortal Legend",
+			"source": "EpicSpells",
+			"page": 152,
+			"level": 11,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a solid gold statue of the target forged on a 1:10 scale"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You restore a dead creature to life with overwhelming magic, allowing it to return no matter its fate.",
+				"You restore a dead creature to life in an unoccupied space within range. You must know the creature’s name and have spoken with it once before. The creature gains a new body free from the ravages of aging or any harmful effects it suffered from in life. The creature is restored at its hit point maximum and recovers any missing features, including esoteric ones such as a soul, true name, or other elements. Once a creature has been restored to life by this spell, it cannot be restored in this manner again until 1,000 years have passed.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 24 hours. When you cast the spell in this manner, you need not have spoken with the target once before in order to restore it to life. "
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Impenetrable Force Field",
+			"source": "EpicSpells",
+			"page": 152,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 1000
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a naturally formed crystalline cube with perfect dimensions"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 4
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a nearly indestructible field of force that prevents all passage without your consent.",
+				"The field is a transparent 1,000-foot cube centered on you that lasts for the duration. When the field appears, you must designate a single word to be the field’s password. Solid objects and magical effects cannot pass through the field, though uttering the password opens a 50-foot-square hole in the nearest side of the cube, which lasts for 1 minute or until the password is uttered again. A creature that attempts to magically teleport into or out of the cube must first succeed on a Charisma saving throw or the effect fails and the creature cannot attempt to teleport again for 1 hour. Effects that would ordinarily destroy force effects (such as a disintegrate spell) instead destroy a 10-square-foot section of the barrier. Unless the barrier is completely destroyed, any destroyed sections of the barrier are magically repaired after 1 minute.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 48 hours. When you cast the spell in this manner, its duration is increased to permanent. This spell ends if you cast it again."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Implosion",
+			"source": "EpicSpells",
+			"page": 152,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You compress a single target of Gargantuan size or",
+				"smaller with overwhelming force.",
+				"If the target is a non-Epic creature, it is slain instantly. All other targets instead take {@dice 30d10} points of bludgeoning damage. Creatures reduced to 0 hit points or slain by this spell are compressed to the size of a marble, along with any nonmagical equipment they are carrying."
+			]
+		},
+		{
+			"name": "Impossible Labyrinth",
+			"source": "EpicSpells",
+			"page": 152,
+			"level": 11,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a glove from a goblin king"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You generate a selective illusion of an impossibly complex labyrinth in a 120-foot cube centered on you.",
+				"When the labyrinth is formed, you may choose any number of creatures of your choice to be immune to the effects of the spell for its duration. All other creatures in the affected area when you cast the spell must succeed on an Intelligence saving throw or become trapped in the labyrinth, hopelessly lost, wandering its impossible corridors in a subversion of physics for as long as they remain in the affected area. While lost in this manner, a creature cannot leave its current space (even by magical means), and other creatures in the labyrinth are hidden from it (detect DC equal to your spell save DC). At the end of each of its turns, an affected creature can repeat the saving throw, ending the illusion for itself on a success.",
+				"A creature with truesight has Epic advantage on saving throws against this spell.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 8 hours. When you cast the spell in this manner, the spell’s duration is increased to permanent and its affected area is increased to a 1-mile cube centered on you. This spell ends if you cast this spell again."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Infinity Room",
+			"source": "EpicSpells",
+			"page": 153,
+			"level": 10,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tessellation drawn upon a piece of vellum"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You fabricate a 20-foot cube of illusory, impossible architecture and absurd geometry in a space you can see within range.",
+				"The cube visibly distorts and warps everything within it, making its contents appear simultaneously everywhere and yet nowhere. Creatures outside the area have total cover against creatures inside the area, and three-quarters cover against creatures with truesight. A creature inside the area that attempts to affect an area outside the spell must first succeed on an Intelligence saving throw against your spell save DC, or the attempt fails and any resources used to make the attempt are wasted.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, you increase all dimensions of the cube by 10 feet for every tier above tier 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time increases to 1 hour. When you cast the spell in this manner, its duration increases to permanent. This spell ends if you cast it again."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Kinetic Control",
+			"source": "EpicSpells",
+			"page": 153,
+			"level": 11,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your consciousness overflows with telekinetic power, allowing you to manipulate almost anything with your mind.",
+				"When you cast the spell, and as a bonus action each round for the duration, you can exert your will on one creature, object, or structure that you can see within range. You can affect the same target round after round or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+				{
+					"type": "entries",
+					"name": "Creature",
+					"entries": [
+						"You can try to move a Gargantuan or smaller creature. The creature must succeed on a Strength saving throw or be moved up to 120 feet in any direction, including upward but not beyond the range of the spell. Until the end of your next turn the creature is {@condition restrained} in your telekinetic grip. A creature so {@condition restrained} lifted upward is suspended in the air. "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Object or Structure",
+					"entries": [
+						"You can try to move an object or structure that weighs up to 100,000 pounds that fits entirely inside the spell’s area. If an object isn’t being worn or carried, you automatically move it up to 120 feet away in any direction but not beyond the range of the spell."
+					]
+				},
+				"If an object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or the object is pulled away and moved up to 120 feet in any direction but not beyond the range of the spell.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 8 hours. When you cast the spell in this manner, the maximum weight of a target that you can affect is increased to 1 million pounds."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Legacy of Steel",
+			"source": "EpicSpells",
+			"page": 153,
+			"level": 12,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a nonmagical weapon or piece of armor that you have wielded or worn for at least 5 years"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You mystically enchant a piece of equipment that is significant to you, reforming it into a mighty tool of great power.",
+				"You touch a piece of armor or weapon used as the spell’s object of power, granting it potent magical power. The item gains the magical properties of a single magical weapon (if the item was a weapon) or magical armor (if the item was a piece of armor) of legendary quality or lower of your choice. The DM determines what properties are available to choose from, and you must attune to the item to benefit from its properties. The type of weapon or armor of your item need not correspond to the property of the original item. For example, you can use this spell to give a glaive the properties of a {@item flame tongue} sword. At your DM’s discretion, your item may be sentient. In such cases, the item is friendly toward you and aspires to follow your ideals. Other creatures cannot attune to the item, and while you are attuned to the item you are aware of its exact location so long as it is on the same plane as you.",
+				{
+					"type": "entries",
+					"name": "As a Ritual",
+					"entries": [
+						"When you cast this spell as a ritual, its casting time is increased to 24 hours. When you cast the spell in this manner, its duration becomes permanent, but you cannot regain the Epic spell or class resources expended to cast the spell while it is in effect."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Luck of Ages",
+			"source": "EpicSpells",
+			"page": 154,
+			"level": 12,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an adamantine horseshoe"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"With a touch, you imbue a creature with legendary fortune in all endeavors.",
+				"The target gains the following benefits until the end of its next",
+				"turn.",
+				"• When the target fails a saving throw, it can choose to",
+				"succeed instead.",
+				"• When the target misses an attack, it instead scores a hit.",
+				"• If the target rolls a 19 or lower on an ability check, it",
+				"instead rolls a 20."
+			]
+		},
+		{
+			"name": "Magic Bullet",
+			"source": "EpicSpells",
+			"page": 154,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "an extremely dense object the size of a marble"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You fire an incredibly dense projectile at unreal speed toward a single target you can see within range.",
+				"The projectile passes through any nonmagical object or non-Epic magical barrier and deals 100 force damage to the target.",
+				{
+					"type": "entries",
+					"name": "At Higher Tiers",
+					"entries": [
+						"When you cast this spell as a tier 2 Epic spell or higher, the damage increases by 100 for each tier above tier 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Malevolent Fists of Spite",
+			"source": "EpicSpells",
+			"page": 154,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small crushable beast"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a pair of fists composed of sickly black energy that are itching to tear your enemies apart.",
+				"The fists appear in an unoccupied 15-foot-square space that you can see within range and cannot be separated.",
+				"The fists are Huge and last for the spell’s duration and move at your command, mimicking the movements of your own hands.",
+				"The fists are a single object with an AC of 26 and 500 hit points. The fists have a Strength of 34 (+12) and a Dexterity of 10 (+0) and do not fill their space. If the fists drops to 0 hit points, they give a final offensive gesture before exploding. Each creature within 20 feet of the fists when they explode must succeed on a Dexterity saving throw or take {@dice 20d8} points of force damage, or half as much on a success.",
+				"When you cast the spell and as bonus action on your subsequent turns, you can move the fists up to 60 feet and then cause one of the following effects.",
+				"{@bold Crush.} The fists make two melee spell attacks against a creature or object within 5 feet. On a successful hit, a target takes {@damage 6d12 + 12} force damage.",
+				"{@bold Smash.} The fists bump together with punishing force, slamming a single Huge or smaller creature within 5 feet. The target must succeed on a Dexterity saving throw or take {@damage 20d8} force damage and be {@condition stunned} until the end of its next turn.",
+				"{@bold Tear.} The fists attempt to grapple a Gargantuan or smaller creature within 5 feet (+12 on Strength checks made to grapple, escape DC 20). On a success, the fists attempt to pull the creature in opposite directions and tear it in half. The {@condition grappled} creature must succeed on a Constitution saving throw or lose hit points equal to half its hit point maximum, or lose 100 hit points on a success. A creature reduced to 0 hit points from this damage is torn in half.",
+				"{@bold Throttle.} The fists attempt to grapple one Huge or smaller creature within 5 feet of them (+12 on Strength checks made to grapple, escape DC 20). While the fists are grappling a target, the target cannot breathe or speak and is {@condition restrained}. As a bonus action, you can order the fists to squeeze the {@condition grappled} creature. When you do so, the target must succeed on a Constitution saving throw or be knocked {@condition unconscious} until the start of its next turn."
+			],
+			"conditionInflict": [
+				"restrained",
+				"stunned",
+				"unconscious"
+			]
+		},
+		{
+			"name": "Megalith",
+			"source": "EpicSpells",
+			"page": 154,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fist-sized stone inscribed with Druidic runes by seven different archdruids"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You summon a mighty elemental being that serves you faithfully for the spell’s duration.",
+				"The megalith appears in an unoccupied space you can see that is connected to the ground, and disappears when it drops to 0 hit points or when the spell ends.",
+				"The megalith serves you unquestioningly and takes its turn immediately after yours. The megalith obeys verbal commands (no action required) given to it in a language it understands. If you don’t issue commands to it, the megalith defends itself from hostile creatures but otherwise takes no actions. If the megalith is within 90 feet of you when you would take damage, you instead take half damage and the megalith takes the other half of that damage.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 10 minutes. When you cast the spell in this manner, you no longer need to concentrate to maintain its effects for the duration."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/megalith.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Megalith",
+			"source": "EpicSpells",
+			"page": 154,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fist-sized stone inscribed with Druidic runes by seven different archdruids"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You summon a mighty elemental being that serves you faithfully for the spell’s duration.",
+				"The {@creature megalith|epicspells} appears in an unoccupied space you can see that is connected to the ground, and disappears when it drops to 0 hit points or when the spell ends.",
+				"The megalith serves you unquestioningly and takes its turn immediately after yours. The megalith obeys verbal commands (no action required) given to it in a language it understands. If you don’t issue commands to it, the megalith defends itself from hostile creatures but otherwise takes no actions. If the megalith is within 90 feet of you when you would take damage, you instead take half damage and the megalith takes the other half of that damage.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 10 minutes. When you cast the spell in this manner, you no longer need to concentrate to maintain its effects for the duration."
+			]
+		},
+		{
+			"name": "Mera’s Miraculous Lightning Leap",
+			"source": "EpicSpells",
+			"page": 156,
+			"level": 10,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a 15-foot long piece of fine adamantine wire"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Discovered by the beloved silver dragonborn ascendant Mera, this spell transforms your body and equipment into pure electrical energy for the duration.",
+				"While in this state, you gain the following benefits until the start of your next turn.",
+				"• You are immune to lightning damage and have",
+				"resistance to all other damage.",
+				"• You have a flying speed of 120 feet and your",
+				"movement does not provoke opportunity attacks.",
+				"• You can occupy another creature’s space and vice versa,",
+				"and a creature’s space is not considered difficult terrain",
+				"for you. Additionally, you can move through any space",
+				"large enough for a pinhead. If you end your turn in",
+				"another creature’s space, you provoke an opportunity",
+				"attack from that creature and are moved to the nearest",
+				"unoccupied space.",
+				"• When you enter a creature’s space for the first time on",
+				"a turn, it takes {@damage 10d10} lightning damage.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the damage increases by {@dice 10d10} for each tier above tier 1."
+			]
+		},
+		{
+			"name": "Miracle",
+			"source": "EpicSpells",
+			"page": 156,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"s": true,
+				"m": "six unique gemstones from the beginning of time"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"With a snap of your fingers, you invoke the most powerful magic ever produced in the known multiverse.",
+				"You change reality to a new mode of existence, with near-limitless potential. In the known history of this spell, no casting has failed to produce the desired effect exactly as intended. A “typical” casting of this spell involves replicating the effects of any other Epic spell as Deific effects. An “atypical” casting must involve a desire that can be stated in twelve words or less. However, when you cast this spell in an “atypical” manner, roll a {@dice d20}. On a roll of 19 or lower the spell fails, you take arcane damage equal to your hit point maximum, and you cannot cast the spell again until 1 year has passed. On a roll of 20 the spell functions normally, but you can never cast it again. Even the power of this spell cannot circumvent this effect.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 6 days. When you cast the spell in this manner, you always roll a natural 20 on the spell’s {@dice d20} roll on an “atypical” casting."
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Mortifying Apparition",
+			"source": "EpicSpells",
+			"page": 156,
+			"level": 10,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tooth of a person frightened to death"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You manifest a horrific vision that terrifies even the most stalwart of souls.",
+				"The vision appears in an unoccupied space you can see within range. Creatures of your choice that see the vision perceive it to be the most terrifying thing they can conceive. When a creature that is not {@condition frightened} starts its turn and can see the vision, it must succeed on a Wisdom saving throw or become {@condition frightened} of the vision. A creature that is immune to the {@condition frightened} condition cannot be immune to this effect but has Epic advantage on saving throws against its effects.",
+				"A creature {@condition frightened} by this spell must take the Dash action to move away from the vision by the fastest, most direct route unless there is nowhere to move. If the creature ends its turn in a location where it cannot see the vision, it can attempt a Wisdom saving throw. On a success, the effect ends for that creature and it cannot be {@condition frightened} by the spell again for its duration.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell, you can take an action on each of your turns to move the vision up to 60 feet. If you cast this spell as a tier 3 Epic spell, a creature that is {@condition frightened} by the spell for 1 continuous minute immediately dies of fright."
+			],
+			"conditionInflict": [
+				"frightened"
+			]
 		}
 	],
 	"monster": [
@@ -2220,6 +3369,137 @@
 			"damageTags": [
 				"B",
 				"P"
+			]
+		},
+		{
+			"name": "Megalith",
+			"source": "EpicSpells",
+			"page": 155,
+			"size": [
+				"H"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				23
+			],
+			"hp": {
+				"formula": "20d12 + 100",
+				"average": 230
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 20,
+			"int": 10,
+			"wis": 16,
+			"cha": 6,
+			"save": {
+				"wis": "+10",
+				"str": "+15",
+				"con": "+12"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Druidic Strikes",
+					"entries": [
+						"The megalith's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The megalith deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The leviathan makes two Slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}41 ({@damage 6d10 + 8}) bludgeoning damage and if the target is a creature, it must succeed on a Strength saving throw against your spell save DC or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/megalith.PNG"
+						}
+					}
+				]
+			},
+			"pbNote": "+7",
+			"languages": [
+				"Druidic",
+				"Terran"
+			],
+			"languageTags": [
+				"DU",
+				"T"
+			],
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B"
 			]
 		}
 	],
