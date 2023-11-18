@@ -15,6 +15,335 @@
 			}
 		]
 	},
+	"monster": [
+		{
+			"name": "Epic Mount",
+			"source": "EpicSpells",
+			"page": 143,
+			"size": [
+				"L"
+			],
+			"type": "Epic (celestial, dragon, fiend, or plant—your choice)",
+			"alignment": [
+				{
+					"special": "your alignment"
+				}
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"barding"
+					]
+				}
+			],
+			"hp": {
+				"formula": "29d10 + 174",
+				"average": 333
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 100
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 22,
+			"int": 18,
+			"wis": 24,
+			"cha": 12,
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 0,
+			"languages": [
+				"(your languages)"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mount makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} (your proficiency bonus {@hit 5} to hit), reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage. "
+					]
+				},
+				{
+					"name": "Kick",
+					"entries": [
+						"{@atk mw} (your proficiency bonus + {@hit 5} to hit), reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage and the target is pushed 10 feet away from the mount. "
+					]
+				},
+				{
+					"name": "Call to Glory (Recharge 5–6).",
+					"entries": [
+						"The mount magically teleports up to 100 miles to an unoccupied space adjacent to you. As a reaction when the mount appears, you may mount it."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Empowered Blows",
+					"entries": [
+						"The mount’s weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Mighty Steed",
+					"entries": [
+						"While it is being ridden, the mount has Epic advantage on saving throws and ability checks."
+					]
+				},
+				{
+					"name": "Unbelievable Steed",
+					"entries": [
+						"On each of its turns, the mount can take a bonus action to take the Dash action. "
+					]
+				},
+				{
+					"name": "Skills",
+					"entries": [
+						"the mount is proficient in Athletics and Perception and uses your proficiency bonus to determine the bonus to its skills"
+					]
+				}
+			],
+			"damageTagsLegendary": [
+				"P"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Megalith",
+			"source": "EpicSpells",
+			"page": 155,
+			"size": [
+				"H"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				23
+			],
+			"hp": {
+				"formula": "20d12 + 100",
+				"average": 230
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 20,
+			"int": 10,
+			"wis": 16,
+			"cha": 6,
+			"save": {
+				"wis": "+10",
+				"str": "+15",
+				"con": "+12"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Druidic Strikes",
+					"entries": [
+						"The megalith's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The megalith deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The leviathan makes two Slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}41 ({@damage 6d10 + 8}) bludgeoning damage and if the target is a creature, it must succeed on a Strength saving throw against your spell save DC or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/megalith.PNG"
+						}
+					}
+				]
+			},
+			"pbNote": "+7",
+			"languages": [
+				"Druidic",
+				"Terran"
+			],
+			"languageTags": [
+				"DU",
+				"T"
+			],
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B"
+			]
+		}
+	],
+	"class": [],
+	"subclass": [],
+	"classFeature": [],
+	"subclassFeature": [],
+	"spellFluff": [],
+	"legendaryGroup": [],
+	"monsterFluff": [],
+	"background": [],
+	"backgroundFeature": [],
+	"feat": [],
+	"optionalfeature": [],
+	"race": [],
+	"raceFeature": [],
+	"raceFluff": [],
+	"subrace": [],
+	"deity": [],
+	"item": [],
+	"baseitem": [],
+	"variant": [],
+	"itemProperty": [],
+	"itemType": [],
+	"itemFluff": [],
+	"itemGroup": [],
+	"itemEntry": [],
+	"psionic": [],
+	"reward": [],
+	"object": [],
+	"trap": [],
+	"hazard": [],
+	"variantrule": [],
+	"condition": [],
+	"disease": [],
+	"status": [],
+	"adventure": [],
+	"adventureData": [],
+	"book": [],
+	"bookData": [],
+	"table": [],
+	"tableGroup": [],
+	"vehicle": [],
+	"vehicleUpgrade": [],
+	"vehicleWeapon": [],
+	"action": [],
+	"cult": [],
+	"boon": [],
+	"language": [],
+	"languageScript": [],
+	"makebrewCreatureTrait": [],
+	"charoption": [],
+	"charoptionFluff": [],
+	"recipe": [],
+	"psionicDisciplineFocus": [],
+	"psionicDisciplineActive": [],
 	"spell": [
 		{
 			"name": "Adjure Purity",
@@ -2759,10 +3088,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
 					}
 				]
 			},
@@ -3161,335 +3486,1549 @@
 			"conditionInflict": [
 				"frightened"
 			]
-		}
-	],
-	"monster": [
+		},
 		{
-			"name": "Epic Mount",
+			"name": "Necrotic Cyst",
 			"source": "EpicSpells",
-			"page": 143,
-			"size": [
-				"L"
-			],
-			"type": "Epic (celestial, dragon, fiend, or plant—your choice)",
-			"alignment": [
+			"page": 156,
+			"level": 11,
+			"school": "N",
+			"time": [
 				{
-					"special": "your alignment"
+					"number": 1,
+					"unit": "action"
 				}
 			],
-			"ac": [
-				{
-					"ac": 24,
-					"from": [
-						"barding"
-					]
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
 				}
-			],
-			"hp": {
-				"formula": "29d10 + 174",
-				"average": 333
 			},
-			"speed": {
-				"walk": 50,
-				"fly": 100
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rag soaked in the blood of a plague victim"
 			},
-			"str": 20,
-			"dex": 18,
-			"con": 22,
-			"int": 18,
-			"wis": 24,
-			"cha": 12,
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 0,
-			"languages": [
-				"(your languages)"
-			],
-			"action": [
+			"duration": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The mount makes two attacks."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} (your proficiency bonus {@hit 5} to hit), reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage. "
-					]
-				},
-				{
-					"name": "Kick",
-					"entries": [
-						"{@atk mw} (your proficiency bonus + {@hit 5} to hit), reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage and the target is pushed 10 feet away from the mount. "
-					]
-				},
-				{
-					"name": "Call to Glory (Recharge 5–6).",
-					"entries": [
-						"The mount magically teleports up to 100 miles to an unoccupied space adjacent to you. As a reaction when the mount appears, you may mount it."
-					]
+					"type": "timed",
+					"duration": {
+						"type": "year",
+						"amount": 1
+					}
 				}
 			],
-			"dragonAge": "adult",
-			"traitTags": [
-				"Legendary Resistances"
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your touch infests a creature with the vilest disease that festers and churns with raw evil.",
+				"You make a melee spell attack against a flesh-and-blood creature within reach. On a hit, you infect the creature with a necrotic cyst that takes up residence within its body. If the creature is immune to disease, it is not immune to the necrotic cyst, but you make your spell attack roll against the creature with Epic disadvantage. The cyst is a complex Epic disease that can take many forms. When you infect a creature with the disease, you may select which form the cyst initially takes. As an action while you are on the same plane as the creature infected by the cyst, you may change the form of the cyst to a different one. An Epic creature can attempt a Constitution saving throw at the end of each of its turns to cure itself of the disease and end the effect. Once two successful Constitution saving throws have been made in this manner, the effect ends and the creature is cured. The spell immediately ends if you cast it again before the duration ends.",
+				"{@bold Benign Cyst.} The cyst lies dormant within the creature, becoming nearly undetectable. Non-Epic magic is unable to detect the cyst and the creature can no longer attempt Constitution saving throws to end the effect. A benign cyst can be surgically removed by a creature using a healer’s kit that succeeds on a Wisdom (Medicine) ability check against your spell save DC.",
+				"{@bold Emaciating Cyst.} The creature’s body rapidly withers as the cyst consumes its life force, reducing it to a hunched, debilitated state. The creature cannot take bonus actions or reactions and has Epic disadvantage on Strength, Dexterity, and Constitution saving throws.",
+				"{@bold Hungering Cyst.} The creature’s body is consumed from the inside by the cyst. At the start of each of the creature’s turns, it takes {@damage 8d8} vile damage. If the target is slain while under the effects of the hungering cyst, each creature within 5 feet of the creature must succeed on a Constitution saving throw or become infected with a necrotic cyst for the remainder of the spell’s duration.",
+				"{@bold Liquidating Cyst.} The cyst explodes outward in a shower of gore and body parts. If the creature has 100 hit points or fewer, it is slain instantly. Otherwise, the creature takes {@dice 20d6} necrotic damage and the spell ends.",
+				"{@bold Oppressing Cyst.} The creature’s head visibly swells as the cyst relocates to its brain. The creature is {@condition charmed} and has Epic disadvantage on Intelligence, Wisdom, and Charisma saving throws."
 			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflictLegendary": [
-				"incapacitated"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened"
-			],
-			"trait": [
-				{
-					"name": "Empowered Blows",
-					"entries": [
-						"The mount’s weapon attacks are magical."
-					]
-				},
-				{
-					"name": "Mighty Steed",
-					"entries": [
-						"While it is being ridden, the mount has Epic advantage on saving throws and ability checks."
-					]
-				},
-				{
-					"name": "Unbelievable Steed",
-					"entries": [
-						"On each of its turns, the mount can take a bonus action to take the Dash action. "
-					]
-				},
-				{
-					"name": "Skills",
-					"entries": [
-						"the mount is proficient in Athletics and Perception and uses your proficiency bonus to determine the bonus to its skills"
-					]
-				}
-			],
-			"damageTagsLegendary": [
-				"P"
-			],
-			"savingThrowForcedLegendary": [
-				"dexterity"
-			],
-			"damageTags": [
-				"B",
-				"P"
+			"conditionInflict": [
+				"charmed"
 			]
 		},
 		{
-			"name": "Megalith",
+			"name": "Night Terror",
 			"source": "EpicSpells",
-			"page": 155,
-			"size": [
-				"H"
-			],
-			"type": "elemental",
-			"alignment": [
-				"N"
-			],
-			"alignmentPrefix": "Typically ",
-			"ac": [
-				23
-			],
-			"hp": {
-				"formula": "20d12 + 100",
-				"average": 230
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 26,
-			"dex": 10,
-			"con": 20,
-			"int": 10,
-			"wis": 16,
-			"cha": 6,
-			"save": {
-				"wis": "+10",
-				"str": "+15",
-				"con": "+12"
-			},
-			"senses": [
-				"truesight 60 ft."
-			],
-			"passive": 13,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"exhaustion",
-				"paralyzed",
-				"petrified",
-				"stunned",
-				"unconscious"
-			],
-			"trait": [
+			"page": 157,
+			"level": 10,
+			"school": "D",
+			"time": [
 				{
-					"name": "Druidic Strikes",
-					"entries": [
-						"The megalith's weapon attacks are magical."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"The megalith deals double damage to objects and structures."
-					]
+					"number": 1,
+					"unit": "minute"
 				}
 			],
-			"action": [
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the skull of a creature that died from psychic damage"
+			},
+			"duration": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The leviathan makes two Slam attacks."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}41 ({@damage 6d10 + 8}) bludgeoning damage and if the target is a creature, it must succeed on a Strength saving throw against your spell save DC or be knocked {@condition prone}."
-					]
+					"type": "timed",
+					"duration": {
+						"type": "week",
+						"amount": 1
+					}
 				}
 			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Siege Monster"
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You fill a creature’s dreams with visions of pain and horror.",
+				"Choose a creature known to you as the target of this spell. Creatures that do not sleep, such as elves, have Epic advantage on saving throws against this spell but are not immune to its effects, instead suffering the effects when they take a long rest. If you possess a piece of that creature’s body, such as a lock of hair, the creature has Epic disadvantage on its saving throws against this spell. This spell immediately ends if you cast it again before its duration ends.",
+				"Over the spell’s duration, you automatically sense when your target begins a long rest. While the target is resting in this manner, you may choose to inflict one of the following effects on the creature over the course of its rest. saving throw, creatures that completely fit inside the area are encased in the stone prisons and cannot breathe.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 3 Epic spell, each cube created by this spell has 800 hit points instead of 400. "
+			]
+		},
+		{
+			"name": "Obliterate",
+			"source": "EpicSpells",
+			"page": 157,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
 			],
-			"senseTags": [
-				"U"
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "unlimited"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "twelve perfectly cut diamond prisms"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
 			],
-			"actionTags": [
-				"Multiattack"
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gather energy to unleash in a beam of incalculable power that lays waste to anything in its path.",
+				"You conjure a sphere of destructive force that you then hold in a free hand. As an action on each of your turns for the duration, you may gather more power into the sphere. As an action while you hold the sphere, you may unleash its power in a 15-footwide line of infinite length. Creatures, objects, and structures in the affected area take {@damage 40d10} force damage, plus an additional {@damage 20d10} force damage for each time you charged the sphere with energy."
+			]
+		},
+		{
+			"name": "Obsidian Tombs",
+			"source": "EpicSpells",
+			"page": 157,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
 			],
-			"miscTags": [
-				"MW",
-				"RCH"
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "four obsidian shards carved into cubes"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
 			],
-			"hasFluff": true,
-			"hasFluffImages": true,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create prisons of crushing obsidian rock from the ground in four 15-foot cubes you can see within range.",
+				"The cubes have an AC of 20 and 400 hit points and if destroyed leave behind difficult terrain in the area they occupied. Huge or smaller creatures completely within those areas must succeed on a Dexterity saving throw to avoid getting imprisoned, moving to the nearest unoccupied space outside of the spell’s area on a success. Creatures that are not completely inside a tomb’s area are pushed to the nearest unoccupied space. On a failed saving throw, creatures that completely fit inside the area are encased in the stone prisons and cannot breathe.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 3 Epic spell, each cube created by this spell has 800 hit points instead of 400. "
+			]
+		},
+		{
+			"name": "Phenomenal Cosmic Power",
+			"source": "EpicSpells",
+			"page": 158,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a golden timepiece set to track 1 minute of time"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your body surges with the endless power of the multiverse, consuming your magic but providing you with extraordinary benefits.",
+				"When this spell is cast and at the start of each of your turns, you may expend two of your non-Epic spell slots. You choose the level of the slots expended, gaining a number of special dice called cosmic dice (d12s) equal to six plus the combined level of spell slots expended in this fashion. Any excess dice generated beyond twice your hit dice maximum are lost, and all cosmic dice generated by this spell are lost at the end of the spell’s duration.",
+				"This spell immediately ends if you cast it again before its duration ends or if you change form to that of another creature.",
+				"You can use cosmic dice in a variety of ways, choosing from the following options.",
+				"• {@bold Cosmic Blast:} Once per turn, when you deal damage with a spell you cast, you may roll any number of your cosmic dice. The spell deals additional force damage equal to the total result rolled.",
+				"• {@bold Cosmic Form.} Once per turn (no action required), you may spend four cosmic dice to end a single condition of your choice currently affecting you or to lose one level of {@condition exhaustion}.",
+				"• {@bold Cosmic Shield.} As a reaction to when you take damage, you may roll any number of your cosmic dice and reduce the damage by the total result rolled."
+			]
+		},
+		{
+			"name": "Phoenix Pyre",
+			"source": "EpicSpells",
+			"page": 158,
+			"level": 10,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you take damage"
+				}
+			],
+			"range": {
+				"type": "cylinder",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a phoenix feather"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You immolate yourself in a massive blast of flame, only to be reborn like the mighty phoenix.",
+				"You die instantly, your body is destroyed, and any equipment you were carrying vanishes in the flames. Creatures in a 20-foot-radius, 100-foot-high cylinder centered on your space must succeed on a Dexterity saving throw or take fire damage equal to your total hit points at the time you cast the spell. A successful saving throw halves the damage. At the end of your next turn, you return to life with half the hit points you possessed when you cast the spell and your body and equipment magically re-form at the space where you cast this spell (or the nearest unoccupied space if that space is occupied).",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell, you return to life with the same hit points you had when you cast the spell. When you cast this spell as a tier 3 Epic spell, you return to life at your hit point maximum."
+			]
+		},
+		{
+			"name": "Planar Eviction",
+			"source": "EpicSpells",
+			"page": 158,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "two native flowers from two different planes"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You attempt to exile a creature to another plane in a dangerous and volatile manner.",
+				"You make a melee spell attack against a creature you can reach. On a successful hit, you banish the target, scattering its form across the planes. While so banished, that creature is {@condition incapacitated} and can attempt a Charisma saving throw at the end of each of its turns to end the effect. When the banishment ends, the creature can choose to return to an unoccupied space nearest to where it was banished or to a different plane of its choice. If it returns to the plane from which it was banished, it takes {@damage 10d10} force damage for each of the turns it was banished.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 3 Epic spell, the banished creature that returns to the plane from which it was banished takes an additional {@damage 10d10} force damage for each of the turns it was banished.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 1 hour. When you cast the spell in this manner, an affected creature cannot return to the plane from which you banished it unless you allow it."
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Prismatic Deluge",
+			"source": "EpicSpells",
+			"page": 158,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a shard of glass forged by dragonfire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A cloud of multicolored light manifests and begins raining down globules of prismatic energy.",
+				"The cloud appears in a 10-foot-tall, 150-foot-radius cylinder centered on a point you can see 300 feet directly above you. The spell fails if you cannot see a point in the air where the cloud could appear. When you cast the spell and as an action on each of your turns until the spell ends, you may cause up to two different colored globes from the Colored Globe table to rain down from the sky. Each globe strikes a separate 15-foot cube centered on a point within range.",
+				{
+					"type": "table",
+					"caption": "Globes",
+					"colLabels": [
+						"Colored Globe",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1",
+						"col-8"
+					],
+					"rows": [
+						[
+							"Red",
+							"Each creature in the area must succeed on a Dexterity saving throw or take 120 fire damage, or half as much on a success."
+						],
+						[
+							"Orange",
+							"Each creature in the area must succeed on a Dexterity saving throw or take 80 acid damage, or half as much on a success. Objects and structures in the area take triple damage."
+						],
+						[
+							"Yellow",
+							"Each creature in the area must succeed on a Dexterity saving throw or take 40 lightning damage and become {@condition stunned} until the end of their next turn. A successful saving throw halves the damage and prevents the {@condition stunned} condition."
+						],
+						[
+							"Green",
+							"Each creature in the area must succeed on a Constitution saving throw or take 80 poison damage and become {@condition poisoned} for the duration of the spell. A successful saving throw halves the damage and prevents the {@condition poisoned} condition."
+						],
+						[
+							"Blue",
+							"Each creature in the area must succeed on a Constitution saving throw or take 80 cold damage and have their movement speed reduced to 0 until the end of their next turn. A successful saving throw halves the damage and prevents the reduction to movement speed."
+						],
+						[
+							"Indigo",
+							"Each creature in the area must succeed on a Constitution saving throw or become {@condition restrained} as they begin to turn to stone. At the start of each {@condition restrained} creature’s turn for the remainder of the spell’s duration, it must attempt a Constitution saving throw. If the creature fails a total of three Constitution saving throws (including the initial saving throw), it is {@condition petrified}."
+						],
+						[
+							"Violet",
+							"Each creature in the area must succeed on a Wisdom saving throw or become slowed—its movement speed is halved and it is unable to take bonus actions or reactions for the remainder of the spell’s duration. A creature can attempt a Wisdom saving throw at the end of each of its turns to end the effect."
+						]
+					]
+				},
+				"{@bold At Higher Tiers.} If you cast this spell as a tier 3 Epic spell, you create three colored globes instead of two at the time of casting and each time you take an action to call down additional globes."
+			],
+			"conditionInflict": [
+				"poisoned",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Puppeteer",
+			"source": "EpicSpells",
+			"page": 159,
+			"level": 11,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "silken strings woven from an ancient phase spider"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You take command of the body of a creature that you can see within range, manipulating its form like a puppet master.",
+				"The target must succeed on a Wisdom saving throw or be enchanted by you for the duration and cannot act unless you will it. While the creature is enchanted by this spell, you have a telepathic link with it across any distance or planar boundary. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it obeys to the best of its ability. At the end of each of its turns in which it takes damage, a creature enchanted by this spell can repeat the saving throw to end the effect. This spell immediately ends if you cast it again before its duration ends.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time increases to 8 hours. When you cast the spell in this manner, its duration increases to 1 week and you no longer need to concentrate to maintain its effects for the duration."
+			]
+		},
+		{
+			"name": "Pyroclastic Cannon",
+			"source": "EpicSpells",
+			"page": 159,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "liquid magma from the heart of a volcano"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A column of pure lava erupts from your outstretched hand, incinerating everything in its path.",
+				"The column is a line 500 feet long and 15 feet wide. Creatures, objects, and structures in the line take {@damage 50d8} fire damage and are coated in molten lava for 1 minute. An affected creature must succeed on a Dexterity saving throw to prevent being coated in lava. A creature or object coated in lava takes {@damage 10d8} fire damage at the start of each of its turns (for creatures) or at the top of each round (for objects). The coating of lava can be removed by completely submerging an affected creature or object in water."
+			]
+		},
+		{
+			"name": "Ravenous Gluttony",
+			"source": "EpicSpells",
+			"page": 160,
+			"level": 11,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a golden spoon that has been used at 1,000 meals"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You are filled with an all-consuming hunger, as your jaw distends and you attempt to devour others.",
+				"Make a melee spell attack against a Huge or smaller creature within reach. On a successful hit, you deal {@damage 24d6} piercing damage and the target must succeed on a Strength saving throw or be drawn into your maw and transported to a demiplane submerged in acid. The demiplane is a 50-foot cube filled with acid to a depth of 25 feet. A creature that ends its turn within the acid takes {@damage 10d6} acid damage and can attempt a Charisma saving throw, escaping the demiplane and emerging in the nearest unoccupied space to you on a success. If a creature is slain by this acid damage, you regain a number of hit points equal to half the creature’s hit point maximum (rounded down).",
+				"{@bold At Higher Tiers.} If you cast this spell as a tier 3 Epic spell, the acid damage dealt is increased by {@dice 10d6}."
+			]
+		},
+		{
+			"name": "Release the Kraken",
+			"source": "EpicSpells",
+			"page": 160,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a kraken’s heart"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure watery tentacles that bring ruin to those who dare come within reach.",
+				"You create eight tentacles in unoccupied 10-foot squares on the ground or in water that you can see within range. Each tentacle is an object that fully occupies the space with an AC of 18 and 200 hit points that lasts for the duration or until reduced to 0 hit points. When a creature starts its turn within 50 feet of a tentacle and the tentacle is not grappling another creature, the tentacle makes a melee spell attack against that creature. On a successful hit, the creature takes {@damage 6d6} bludgeoning damage, and Huge or smaller creatures are {@condition grappled} and {@condition restrained} (escape DC equal to your spell save DC). If a tentacle is grappling a creature, the tentacle cannot attack any creature other than the {@condition grappled} creature.",
+				"As an action, you can command all active tentacles to attack a creature, object, or structure you can see within 50 feet of each of them. Tentacles not grappling foes make a melee spell attack against any targets, dealing {@damage 6d6} bludgeoning damage on a successful hit and grappling and restraining Huge or smaller targets (escape DC equal to your spell save DC). Tentacles that are currently grappling creatures when you command them to attack instead fling the {@condition grappled} creatures 120 feet in a random direction, dealing {@damage 12d6} bludgeoning damage and knocking them {@condition prone}."
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Reverse Magic",
+			"source": "EpicSpells",
+			"page": 160,
+			"level": 10,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within 300 feet of you casting a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You interrupt a creature casting a spell with a blast of antimagic.",
+				"If the creature is casting a tier 1 Epic spell or a non-Epic spell, that spell fails and has no effect. If the creature is casting a tier 2 Epic spell or higher, you must attempt an ability check using your spellcasting ability against a DC of 24 for a tier 2 Epic spell or a DC of 28 for a tier 3 Epic spell. On a success, the creature’s spell fails and has no effect. At your discretion, spells that are successfully reversed explode spectacularly, dealing {@damage 10d6} arcane damage to the casting creature.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the interrupted spell has no effect if its tier is less than or equal to the tier used to cast this spell. Additionally, the damage caused by a reversed spell increases by {@dice 5d6} for each tier above tier 1."
+			]
+		},
+		{
+			"name": "Seal Fate",
+			"source": "EpicSpells",
+			"page": 160,
+			"level": 11,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a prince’s unopened children’s book"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You bestow a grim portent on a suffering creature, sealing its fate for all eternity.",
+				"A creature of your choice within reach must succeed on a Charisma saving throw or be permanently afflicted with an Epic curse. If the target is under the effects of a non-Epic or Epic spell or magical effect that lasts 1 minute or longer, the duration is instead for as long as the curse lasts. Every year that passes while the creature is afflicted with the curse, it may repeat the saving throw, ending the curse on a success."
+			]
+		},
+		{
+			"name": "Silent Scythe of Slaying",
+			"source": "EpicSpells",
+			"page": 160,
+			"level": 12,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a god’s gravestone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You manifest a deadly spectral scythe of pure force within range that can cut down nearly any foe.",
+				"The scythe appears in an unoccupied space within range, and when it appears you can attempt a melee spell attack against a target within 5 feet of the scythe. On a hit, the scythe deals {@damage 10d12} arcane damage. If the scythe scores a critical hit, it rolls damage dice three times, instead of twice. Creatures reduced to 0 hit points by this spell are decapitated.",
+				"As an action and/or bonus action on each of your turns, you can move the scythe up to 60 feet and repeat the attack against a target within 5 feet of it."
+			]
+		},
+		{
+			"name": "Sonic Boom",
+			"source": "EpicSpells",
+			"page": 161,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a storm giant’s death rattle magically preserved in a glass jar"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You clap your hands and unleash a deafening wave of thunderous energy in a 60-foot radius centered on you.",
+				"Creatures other than you in that area must succeed on a Constitution saving throw or take {@damage 20d6} thunder damage and be {@condition blinded} and {@condition deafened} until they regain at least 1 hit point from a magical effect. A successful saving throw halves the damage and prevents the {@condition blinded} and {@condition deafened} conditions.",
+				"If this spell is cast in a structure or enclosed space that is not large enough to accommodate the entire 60-foot radius, it deals an additional {@damage 20d6} thunder damage and you are subjected to the spell’s effects."
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened"
+			]
+		},
+		{
+			"name": "Soul Harvest",
+			"source": "EpicSpells",
+			"page": 161,
+			"level": 12,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lich’s phylactery"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You extract the soul of a single creature within range and gain power from its essence.",
+				"The creature is afflicted with an Epic curse for the duration. While so cursed a creature cannot gain advantage or Epic advantage, and it has Epic disadvantage on attack rolls, saving throws, and ability checks.",
+				"If the creature is killed while under the effects of the spell, you consume its soul, learning everything the creature knew, and the creature cannot be restored to life by non-Deific means."
+			]
+		},
+		{
+			"name": "Spell Sequencer",
+			"source": "EpicSpells",
+			"page": 161,
+			"level": 10,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a golden onion"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Imbuing your spellcasting with a powerful infusion of Epic magic, you “load” three lesser spells to unleash in a single mighty flurry.",
+				"Select three non-Epic spells you know of 5th level or lower with a casting time of 1 action or bonus action. Until the spell ends, you may cast all three selected spells as a single bonus action in an order of your choice. Spells cast in this manner do not expend your spell slots and do not prevent you from casting additional spells that turn. This spell immediately ends after you use this bonus action or if you cast it again before the duration ends.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the maximum level of non-Epic spells you can select at the time of the spell’s casting increases to 6th level as a tier 2 Epic spell and to 7th level as a tier 3 Epic spell."
+			]
+		},
+		{
+			"name": "Sphere of Ultimate Destruction",
+			"source": "EpicSpells",
+			"page": 161,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a black diamond cut into a perfect sphere"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a 5-foot-diameter sphere of pure destructive emptiness in a space of your choice within range that lasts for the duration.",
+				"Whenever a creature, object, or structure comes into contact with the sphere for the first time that round, it takes {@damage 30d10} force damage. A creature that makes contact with the sphere can attempt a Constitution saving throw to halve the damage. Anything reduced to 0 hit points by the sphere is instantly and totally destroyed, leaving no remains.",
+				"The sphere is capable of flight, and as a bonus action you can move the sphere up to 60 feet. If the sphere maintains contact with a magic item of legendary quality or lower for its full duration, that item is disintegrated."
+			]
+		},
+		{
+			"name": "Storm of Torment",
+			"source": "EpicSpells",
+			"page": 161,
+			"level": 11,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a draught of liquid suffering"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You invoke a swirling maelstrom of pain that debilitates your enemies.",
+				"The storm swirls around you in a 60-foot radius for the duration and moves with you. As a reaction when a creature in the spell’s area takes an action, bonus action, legendary action, or reaction, you may deal {@damage 10d6} psychic damage to that creature and it must attempt a Constitution saving throw. On a failure, the creature is racked with pain, preventing it from taking that action for the remainder of that turn.",
+				"On each of your turns until the spell ends, you may forgo your action, bonus action, or both. For each you forgo in this manner, you gain the use of an additional reaction, which lasts until the start of your next turn."
+			]
+		},
+		{
+			"name": "Temporal Stasis",
+			"source": "EpicSpells",
+			"page": 162,
+			"level": 11,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a watch that has never been wrong"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Time itself attempts to freeze around a creature you can see within range, locking it away for eternity.",
+				"The target must succeed on a Wisdom saving throw or become {@condition paralyzed} for the duration. Creatures immune to the {@condition paralyzed} condition are not immune to the effects of this spell and instead have Epic advantage on saving throws against it. At the end of each of its turns, a {@condition paralyzed} creature can attempt a Wisdom saving throw, suppressing the {@condition paralyzed} condition on a success.",
+				"On each of your turns, if a creature affected by this spell is not {@condition paralyzed}, you may use your action to force it to attempt a Wisdom saving throw, becoming {@condition paralyzed} by the spell on a failure.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 1 minute. When you cast the spell in this manner, its duration becomes permanent. Additionally, while {@condition paralyzed} by the spell in this manner, the target is frozen in time and does not age or need to eat, drink, or breathe. At the end of every thousand years, a {@condition paralyzed} creature can attempt a Wisdom saving throw, ending the spell’s effects on a success."
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Torrential Avalanche",
+			"source": "EpicSpells",
+			"page": 162,
+			"level": 11,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "sight"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a snow globe containing a tiny village at the base of a mountain"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/megalith.PNG"
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/torrential-avalanche.PNG"
 						}
 					}
 				]
 			},
-			"pbNote": "+7",
-			"languages": [
-				"Druidic",
-				"Terran"
-			],
-			"languageTags": [
-				"DU",
-				"T"
-			],
-			"resist": [
-				"lightning",
-				"thunder",
+			"entries": [
+				"A gigantic avalanche of snow and debris appears at a point you choose within range.",
+				"You can make a wall of snow in a straight line up to 500 feet long, 100 feet high, and 50 feet thick, which lasts for the duration. The wall is permeable, requiring 4 feet of movement for every 1 foot a creature wishes to move through it. When the wall appears, each creature within the area must succeed on a Strength saving throw or take {@damage 10d10} cold damage, or half as much on a success, and become immersed within the wall.",
+				"At the start of each of your turns after the wall appears, the wall, along with any creatures in or on its affected area, moves 60 feet in a straight line away from you. Any Gargantuan or smaller creature immersed within the wall or whose space the wall enters when it moves must attempt a Strength saving throw or take {@damage 10d10} cold damage, or half as much on a success. A creature can take this damage only once per turn. If the wall lasts for its full duration, it crashes to the ground in a wave of frigid cold. Each creature within the wall’s area when the spell ends in this manner must succeed on a Dexterity saving throw or take {@damage 30d10} cold damage, or half as much on a success.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time increases to 8 hours. When you cast the spell in this manner, its maximum length is increased up to 1 mile, its maximum height is increased up to 1,000 feet, and its maximum thickness is increased up to 500 feet."
+			]
+		},
+		{
+			"name": "Translocation",
+			"source": "EpicSpells",
+			"page": 163,
+			"level": 10,
+			"school": "C",
+			"time": [
 				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
 				}
 			],
-			"conditionInflict": [
-				"prone"
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				},
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
 			],
-			"damageTags": [
-				"B"
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You instantly blink from one location to the next in an effortless form of teleportation.",
+				"If you cast this spell as an action, it transports you and up to twenty willing creatures you can see within 30 feet of you, or a single object that you can see within 30 feet of you, to a destination you select. If you target an object, it must be able to fit inside a 30-foot cube and it can’t be held or carried by an unwilling creature. The destination you choose must have been viewed by you in person at least once; you may choose a location on another plane of existence. Non-Deific forces cannot prevent this effect.",
+				"If you cast this spell as a bonus action, you teleport to an unoccupied space you can see within 60 feet and must concentrate on the spell to maintain its effect. On each of your turns before the spell ends, you can repeat this effect."
+			]
+		},
+		{
+			"name": "Transmogrification",
+			"source": "EpicSpells",
+			"page": 163,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a doppelganger embryo"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You warp matter into a new shape with the skill of a master sculptor.",
+				"Choose one creature or nonmagical object you can see within reach. You transform a non-mythic creature into a different creature, a non-mythic creature into an object, or an object into a non-mythic creature (the object must be neither worn nor carried by another creature). An affected target gains temporary hit points equal to the hit points of its new form. These temporary hit points cannot be replaced by temporary hit points from another source, and the target reverts to its normal form when it has 0 temporary hit points or when it dies. If the spell ends before then, the target loses all its temporary hit points and reverts to its normal form. At the end of each of its turns, a transformed Epic creature can attempt a Wisdom saving throw to end the effect. After three successful Wisdom saving throws, the effect ends. If you concentrate on this spell for its full duration, its effects become permanent and a creature can no longer attempt saving throws to end the effect. As an action, you can touch a creature affected by this spell to force it to assume a different form.",
+				"{@bold Creature into Creature.} If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than your character level. A creature cannot be turned into a mythic creature under any circumstances. You can choose to have the target’s game statistics, including mental ability scores, completely replaced by the statistics of the new form and the target assumes the new form’s alignment and personality. Otherwise, the target retains its alignment, along with its Intelligence, Wisdom, and Charisma scores. Additionally, the target retains its skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency bonus as the target, use whichever bonus is higher.",
+				"The target is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other actions that require hands or speech, unless its new form is capable of such actions. The target’s equipment can meld into the new form at your discretion. The target can’t activate, use, wield, or otherwise benefit from its equipment unless that form could also do so.",
+				"{@bold Object into Creature.} You can turn an object into any kind of creature, as long as that creature is not a mythic creature and the creature’s challenge rating is 20 or lower. The creature is friendly to you and your companions for the duration and acts immediately after you on the initiative order. The DM has the creature’s statistics and controls the creature, resolving all its actions and movement.",
+				"If the spell becomes permanent, the creature may remain friendly toward you depending on how it was treated.",
+				"{@bold Creature into Object.} If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form. The creature’s statistics becomes those of the object, and the creature has no memory of the time spent in this form if it reverts to its normal form. The object cannot be a magic item and cannot be worth more than 10,000 gp."
+			]
+		},
+		{
+			"name": "True Alchemy",
+			"source": "EpicSpells",
+			"page": 164,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "primordial matter from before time worth 100,000 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch an object or structure no bigger than a 50-foot cube and disrupt its form with magic, permanently transmuting it into a form of your choice.",
+				"When you affect an object in this manner, you choose what properties it loses or gains (such as hit points, AC, or other properties). However, the object cannot be transformed into something worth more than 100,000 gp in raw materials, nor can its dimensions be increased beyond that of a 50-foot cube.",
+				"If the object you touched is a magic item, you can instead transform it into another item of the same rarity. To affect an artifact in this manner, you must first succeed on a DC 40 saving throw of a type equal to your spellcasting ability. On a failure, you take arcane damage equal to your hit point maximum.",
+				"Anything you transform the target into in this manner must be something that exists or has existed in your universe. If you attempt to transmute a target into something that has never existed in your universe, the spell fails."
+			]
+		},
+		{
+			"name": "Venom Lance",
+			"source": "EpicSpells",
+			"page": 164,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a manticore’s stinger"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You hurl a stinger imbued with lethal poison, which seeks out a creature you are aware of within range.",
+				"The targeted creature must succeed on a Constitution saving throw or have its hit point maximum reduced by {@dice 15d6 + 60}, or half as much on a success. A creature’s hit point maximum remains reduced until it is affected by an Epic effect that restores hit points or until it finishes a long rest.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the creature’s hit point maximum on a failed saving throw is reduced by an additional 40 points for each tier above tier 1."
+			]
+		},
+		{
+			"name": "Wall of Dissolution",
+			"source": "EpicSpells",
+			"page": 164,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of fresh acid from a black dragon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A vitriolic wall of slick acid appears on the ground, dissolving nearly everything it touches.",
+				"The wall forms a transparent barrier up to 90 feet long, 30 feet high, and 5 feet thick, centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. In either case, the wall remains in place for the duration. Creatures in the wall’s area when it is created, who move into the wall for the first time on their turn, or who start their turn within the wall must succeed on a Constitution saving throw or take {@damage 12d8} acid damage, or half as much damage on a success. If a creature fails its saving throw by 5 or more, it takes an additional {@damage 12d8} acid damage.",
+				"A creature attempting to move through the wall must spend 4 feet of movement for every 1 foot moved.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, you may increase the wall’s thickness by 10 feet for each tier above tier 1."
+			]
+		},
+		{
+			"name": "Wave of Calamity",
+			"source": "EpicSpells",
+			"page": 164,
+			"level": 10,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "demon bile"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Toxic fumes emanate from your mouth, overwhelming those who are unfortunate enough to be exposed.",
+				"Each creature in a 30-foot cone must attempt a Constitution saving throw. A creature gains two levels of {@condition exhaustion} on a failure, or one level on a success. A creature with one or more levels of {@condition exhaustion} gained from this spell may attempt a Constitution saving throw at the start of each of its turns to remove one level of {@condition exhaustion} gained from this spell. A creature immune to the {@condition poisoned} condition has Epic advantage on saving throws against this spell.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, a creature gains two additional levels of {@condition exhaustion} on a failed saving throw for each tier above tier 1, or half as many levels on a success."
+			],
+			"conditionInflict": [
+				"exhaustion"
+			]
+		},
+		{
+			"name": "Well of Infinite Darkness",
+			"source": "EpicSpells",
+			"page": 165,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a coin from a cursed wishing well"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call up a void of pure blackness at a point on the ground that you can see within range.",
+				"The void is a 15-foot square that lasts for the duration and emits an aura of light-eating power in a 100-foot radius centered on it. All sources of light within the 15-foot square are immediately extinguished and the entire area is drained of all light. Creatures within the affected area are heavily obscured against all visual senses.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the radius of the well increases by 100 feet for each tier above tier 1.",
+				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 1 hour. When you cast the spell in this manner, the spell’s duration becomes permanent. The spell ends early if you cast it again."
 			]
 		}
-	],
-	"class": [],
-	"subclass": [],
-	"classFeature": [],
-	"subclassFeature": [],
-	"spellFluff": [],
-	"legendaryGroup": [],
-	"monsterFluff": [],
-	"background": [],
-	"backgroundFeature": [],
-	"feat": [],
-	"optionalfeature": [],
-	"race": [],
-	"raceFeature": [],
-	"raceFluff": [],
-	"subrace": [],
-	"deity": [],
-	"item": [],
-	"baseitem": [],
-	"variant": [],
-	"itemProperty": [],
-	"itemType": [],
-	"itemFluff": [],
-	"itemGroup": [],
-	"itemEntry": [],
-	"psionic": [],
-	"reward": [],
-	"object": [],
-	"trap": [],
-	"hazard": [],
-	"variantrule": [],
-	"condition": [],
-	"disease": [],
-	"status": [],
-	"adventure": [],
-	"adventureData": [],
-	"book": [],
-	"bookData": [],
-	"table": [],
-	"tableGroup": [],
-	"vehicle": [],
-	"vehicleUpgrade": [],
-	"vehicleWeapon": [],
-	"action": [],
-	"cult": [],
-	"boon": [],
-	"language": [],
-	"languageScript": [],
-	"makebrewCreatureTrait": [],
-	"charoption": [],
-	"charoptionFluff": [],
-	"recipe": [],
-	"psionicDisciplineFocus": [],
-	"psionicDisciplineActive": []
+	]
 }
