@@ -5029,6 +5029,955 @@
 				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, the radius of the well increases by 100 feet for each tier above tier 1.",
 				"{@bold As a Ritual.} When you cast this spell as a ritual, its casting time is increased to 1 hour. When you cast the spell in this manner, the spell’s duration becomes permanent. The spell ends early if you cast it again."
 			]
+		},
+		{
+			"name": "Blackout",
+			"source": "EpicSpells",
+			"page": 165,
+			"level": 12,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the dust of a disintegrated dragon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Abjuration",
+							"shortName": "Abjuration",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Abjuration magic.",
+				"You distort the flow of magic around a single creature you can see within range, cutting it off from all magical energy.",
+				"The target cannot cast non-Epic spells for the effect’s duration. A creature attempting to cast an Epic spell must succeed on a Charisma saving throw or have the effect fail, and any resources used to cast the spell are wasted. At the end of each of the creature’s turns, it may make a Charisma saving throw. Once a creature has made three such successful saving throws over the spell’s duration, the effect ends."
+			]
+		},
+		{
+			"name": "Grand Summons",
+			"source": "EpicSpells",
+			"page": 166,
+			"level": 12,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a detailed anatomical sketch of the creature you wish to summon and an adamantine cage large enough to hold the creature"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Conjuration ",
+							"shortName": "Conjuration ",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Conjuration magic.",
+				"You magically manufacture an effigy of a single creature that you have encountered before and hold it within a magical receptacle.",
+				"The creature cannot be a legendary or mythic creature and must have a challenge rating no greater than your character level. The creature appears in an unoccupied space within range and is bound within a magical confinement. A creature within this confinement is immune to any damage or hostile effect for as long as it remains within the confinement. The creature has no mind or will of its own; it is merely an extremely convincing, magical simulation.",
+				"As an action, you can call the creature from its confinement and teleport it to an unoccupied space you can see within 100 feet of you. If the creature cannot be teleported to a space within this area, the effect fails and the creature remains confined. While free from its confinement, the creature obeys all your instructions and commands to the best of its ability (no action required by you), and when rolling initiative may instead take its turn either immediately before or after yours. As an action, you may dismiss the creature and teleport it back to its magical confinement. If the creature cannot be teleported back to the confinement, the effect fails and the spell ends. If the creature is slain, the spell ends. If the spell ends before the creature is slain, it vanishes back to its place of origin.",
+				"This spell immediately ends if you cast it again before its duration ends. "
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/grand-summons.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Knowledge Cascade",
+			"source": "EpicSpells",
+			"page": 166,
+			"level": 12,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a perfect stone replica of a humanoid brain"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divination",
+							"shortName": "Divination",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Divination magic.",
+				"A single creature you touch is flooded with information and experience. The target instantly recovers any class features, spell slots, and other abilities as though it had finished a short rest."
+			]
+		},
+		{
+			"name": "Microcosm",
+			"source": "EpicSpells",
+			"page": 166,
+			"level": 12,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "silver painter’s tools"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Enchantment",
+							"shortName": "Enchantment",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Enchantment magic.",
+				"You warp the consciousness of a single creature you can see within range, trapping it within a fictional reality of your own design. If the creature you choose has 200 or fewer hit points, it is immediately and permanently {@condition incapacitated}, cannot communicate in any way, and cannot spend movement. A creature afflicted by this spell makes no effort to preserve itself, and unless it receives medical care it will simply die from exposure, starvation, or other environmental factors."
+			]
+		},
+		{
+			"name": "Obsolescence",
+			"source": "EpicSpells",
+			"page": 166,
+			"level": 12,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the soul of a creature from an extinct race"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Necromancy magic.",
+				"Your gaze unleashes destructive energies that annihilate a single creature you can see within range. The creature must attempt a Constitution saving throw, taking 100 points of necrotic damage on a failure, or half as much on a success. Until the spell ends, on each of your turns you may take an action to channel destructive power into the target, which must attempt a Constitution saving throw. On a failed saving throw, the target takes 100 points of necrotic damage, plus an additional 100 points of necrotic damage for each round it has been affected by the spell. A successful saving throw halves this damage. The spell ends if you use your action to do anything else or if the target is ever outside the spell’s range. Creatures reduced to 0 hit points by this spell are destroyed utterly and can only be restored to life by Deific means."
+			]
+		},
+		{
+			"name": "Prismatic Weapon",
+			"source": "EpicSpells",
+			"page": 167,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rainbow magically confined in a wine bottle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Transmutation",
+							"shortName": "Transmutation",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Transmutation magic.",
+				"You touch a weapon, transforming it into a brilliant tool of luminescent destruction. The weapon is imbued with eight different colors which glisten and sparkle, shedding bright light in a 30-foot radius. When the weapon scores a hit, the wielder may elect to expend a color of its choice to cause the attack to have the additional listed effect. Once a color has been expended, it disappears from the weapon and cannot be used again. If the weapon has no colors remaining, the effect ends.",
+				"{@bold Red.} The hit deals an additional {@damage 10d6} fire damage.",
+				"{@bold Orange.} The hit deals an additional {@damage 10d6} acid damage.",
+				"{@bold Yellow.} The hit deals an additional {@damage 10d6} lightning damage.",
+				"{@bold Green.} The hit deals an additional {@damage 10d6} poison damage.",
+				"{@bold Blue.} The hit deals an additional {@damage 10d6} cold damage.",
+				"{@bold Indigo.} The target must succeed on a Constitution saving throw or be {@condition petrified} until the end of its next turn.",
+				"{@bold Violet.} The target is {@condition blinded} until the spell ends.",
+				"{@bold Mysterious.} The hit deals an additional {@damage 10d6} arcane damage."
+			],
+			"conditionInflict": [
+				"blinded",
+				"petrified"
+			]
+		},
+		{
+			"name": "Ray of Ruination",
+			"source": "EpicSpells",
+			"page": 167,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a needle made of starmetal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Evocation",
+							"shortName": "Evocation",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Evocation magic.",
+				"You point at a creature you can see within range and unleash a ray of crackling, all-consuming energy.",
+				"You make a ranged spell attack against the target and imbue the ray with the power to destroy a specific aspect of the target, chosen from Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma. On a hit, the target takes {@damage 20d12} damage of a type according to the ability you selected, and must succeed on a saving throw of that ability or take double damage from the it.",
+				"• {@bold Strength.} Cold damage",
+				"• {@bold Dexterity.} Radiant damage",
+				"• {@bold Constitution.} Acid damage",
+				"• {@bold Wisdom.} Necrotic damage",
+				"• {@bold Intelligence.} Psychic Damage",
+				"• {@bold Charisma.} Force Damage "
+			]
+		},
+		{
+			"name": "Wall of Fantabulous Wonderment",
+			"source": "EpicSpells",
+			"page": 167,
+			"level": 12,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a portrait painted by a famous artist"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Illusion",
+							"shortName": "Illusion",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Archmage Secret Spell.} The following Epic spell is only available to archmages who have mastered all there is to know about Illusion magic.",
+				"You invoke an illusory wall of ever-shifting color and form that overwhelms the senses of those who interact with it. You can make the wall up to 90 feet long, up to 30 feet high, and up to 5 feet thick. The wall is opaque and lasts for the spell’s duration. When the wall appears or a creature enters the affected area for the first time on a turn, it must attempt an Intelligence saving throw, gaining two levels of the wonderstruck condition on a failure, or one level on a success, the effects of which last for the spell’s duration. Wonderstruck is a special condition measured in six levels.",
+				{
+					"type": "table",
+					"caption": "Wonderstruck",
+					"colLabels": [
+						"Level",
+						"Wonderstruck Effect"
+					],
+					"colStyles": [
+						"col-1",
+						"col-8"
+					],
+					"rows": [
+						[
+							"1",
+							"The target cannot communicate intelligibly, instead blabbering about the beauty of the wall of fantabulous wonderment."
+						],
+						[
+							"2",
+							"The target cannot have resistance or immunity to damage from your spells."
+						],
+						[
+							"3",
+							"The target has Epic disadvantage on Intelligence, Wisdom, and Charisma saving throws."
+						],
+						[
+							"4",
+							"The target is vulnerable to damage from your spells."
+						],
+						[
+							"5",
+							"The target cannot willingly move away from the wall of fantabulous wonderment."
+						],
+						[
+							"6",
+							"The target’s Intelligence, Wisdom, and Charisma ability scores are reduced to 1, and the target is {@condition incapacitated}."
+						]
+					]
+				},
+				"If an already wonderstruck creature suffers another effect that causes a level of wonderstruck, its current level of wonderstruck increases by an amount specified in the effect’s description. A creature suffers the effect of its current level of wonderstruck as well as all lower levels."
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Nevermore",
+			"source": "EpicSpells",
+			"level": 12,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a raven’s feather that has never seen the light of day"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You speak the full name of a single creature, or the family name of a group of related creatures, inflicting them with a strange and deadly curse for the spell’s duration. Creatures cursed in this manner constantly have a flock of ravens magically appear and roost above them, observing the target in perfect silence.",
+				"While cursed in this manner, a creature loses proficiency in up to three skills of your choice, loses proficiency in up to two saving throws of your choice, and loses the ability to speak, read, and write in a language of your choice. Additionally, you treat the target as if you can see it all times, even if you would ordinarily be unable to do so (such as if you were {@condition blinded} or leagues away from its position).",
+				"A creature can attempt to end this curse by using a Hide action to attempt a Dexterity (Stealth) check contested by your Wisdom (Perception). On a success, the curse ends. On a failure, the creature becomes unable to attempt to end the curse in this manner again until 1 week has passed."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/nevermore.PNG"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Silver Light of Seluna",
+			"source": "EpicSpells",
+			"page": 83,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rock from a moon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Apocalypse-hub/epic_spells/main/silver-light.PNG"
+						}
+					}
+				]
+			},
+			"entries": [
+				"The sky darkens to night and a column of moonlight shines down in a 15-foot-radius, infinitely high cylinder centered on a point within range. Until the spell ends, bright light fills the cylinder, and dim light is shed by the cylinder in a 45-foot radius.",
+				"On each of your turns after you cast the spell, you can use an action to move the cylinder 120 feet in any direction.",
+				"A creature illuminated by either light cannot be hidden or {@condition invisible}. Additionally, shapechangers that enter the area for the first time on a turn or start their tuns in the affected area must succeed on a Constitution saving throw or be forced to instantly revert to their true forms.",
+				"As a bonus action on each of its turns, a creature within the cylinder can offer up a prayer for aid, which is always heard by you. If you choose to answer the prayer, you can grant the praying creature a single benefit from the following options.",
+				"• The creature regains {@dice 10d10} hit points.",
+				"• If the creature is suffering an effect that allows it to attempt a saving throw to end the effect, it may immediately attempt that saving throw.",
+				"• The creature is magically teleported to an unoccupied space within either light created by the cylinder.",
+				"• The creature is freed from any curses and cured of any diseases affecting it."
+			]
+		},
+		{
+			"name": "Trial of Arcane Might",
+			"source": "EpicSpells",
+			"page": 145,
+			"level": 12,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "10 years off the casters life; immortal creatures instead develop a magical deformity"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You challenge another spellcaster within range to a duel of magical might. You pour your magic through a conduit of energy into a single creature with a spellcasting feature within range that you can see. If your target does not have a spellcasting feature or is {@condition unconscious}, the spell dissipates harmlessly.",
+				"The affected creature can choose to contest your power, causing you and the creature to struggle for control over the spell’s energies. If the creature chooses not to contest the spell, it takes 600 arcane damage and the spell ends. While the spell is in effect, either you or the affected creature can take an action to make an Arcana (Spellcasting ability) check contested by an Arcana (Spellcasting ability) check from the other creature. If you or the creature loses two of these contests in a row, the spell ends and the loser takes 600 arcane damage. If you become unable to maintain {@status concentration} on the spell for any reason, you immediately take 600 arcane damage. A creature reduced to 0 hit points by this spell is utterly obliterated."
+			]
+		},
+		{
+			"name": "Festival of Light",
+			"source": "EpicSpells",
+			"page": 186,
+			"level": 12,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a living shade of color"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A brilliant column of multicolored light appears in the shape of a cylinder that is up to 120 feet tall and with a 30-foot radius, centered on a point you can see within range. Creatures in the area that can see the effect are dazed for as long as they remain within the spell’s area. A creature that leaves the affected area remains dazed until the end of its next turn.",
+				"Additionally, when an enemy creature outside the spell’s area that can see the cylinder starts each of its turns, it must succeed on a Wisdom saving throw or try to move into the spell’s area by the most expedient means possible and remain there until the end of that turn. A creature immune to the {@condition charmed} condition has Epic advantage on this saving throw.",
+				"{@bold The Dazed Condition}",
+				"A dazed creature has its cognitive and motor functions impaired, suffering the following penalties. A creature immune to the {@condition stunned} condition is also immune to the dazed condition.",
+				"• The creature’s speed is halved.",
+				"• The creature can take either an action or bonus action on its turn, but not both.",
+				"• The creature cannot take reactions or legendary actions."
+			]
+		},
+		{
+			"name": "Divine Companion",
+			"source": "EpicSpells",
+			"page": 209,
+			"level": 10,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a divine being known as a divine companion which becomes bound to you. The companion takes the form of a small creature of your choice but is in fact pure divine essence that cannot be harmed or forcibly moved. When you cast this spell, you must select an ability score: Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma. The ability score you select determines the form your divine companion takes.",
+				"• {@bold Strength:} Do",
+				"• {@bold Dexterity:} Cat",
+				"• {@bold Constitution:} Tortoise",
+				"• {@bold Intelligence:} Monkey",
+				"• {@bold Wisdom:} Snake",
+				"• {@bold Charisma:} Parrot",
+				"The companion is distinguished from ordinary creatures by golden highlights and striking violet eyes. The companion acts independently from you but acts on your turn. On each of your turns the companion can move up to 60 feet and is able to fly (hover), but it can never move more than 300 feet away from you. When you cast a spell, you can choose to make your divine companion the origin of your spell instead of yourself.",
+				"Additionally, you gain a +2 bonus to the ability score you selected when you cast the spell. This bonus lasts for as long as your companion is bound to you.",
+				"The companion can offer you advice and share information with you, speaking any languages you speak. Once over the duration of the spell you can ask the companion a question about something you both have seen, which the companion answers to the best of its ability. Given its divine nature, the companion typically knows the answer to almost anything that isn’t Deific in nature.",
+				"This spell ends if you cast it again while you are bound to a companion or if you are ever more than 300 feet away from your companion."
+			]
+		},
+		{
+			"name": "Necroplasm Sphere",
+			"source": "EpicSpells",
+			"page": 442,
+			"level": 11,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the skull of a creature that was murdered"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You hurl a sphere of vile necroplasm at a space within range, which explodes in a 30-foot radius sphere. Creatures in the affected area must succeed on a Constitution saving throw or take {@damage 10d10} vile damage, or half as much on a success. For each living creature in the affected area, this damage increases by {@dice 5d10}, to a maximum of {@damage 30d10} vile damage."
+			]
+		},
+		{
+			"name": "Divine Judgment",
+			"source": "EpicSpells",
+			"page": 456,
+			"level": 10,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You fix your eyes on a creature you can see within range and declare it judged by the divine powers of the universe. When you do so, you must dictate an alignment you believe your target to possess and make a ranged spell attack. On a successful hit, the target takes {@damage 20d8} radiant or necrotic damage (your choice), and if you correctly dictated your target’s alignment, the attack scores a critical hit on a roll of 16–20.",
+				"{@bold At Higher Tiers.} When you cast this spell as a tier 2 Epic spell or higher, you increase the damage dealt on a successful hit by {@dice 20d8} for each tier higher than tier 1, to a maximum of {@dice 60d8} at tier 3."
+			]
+		},
+		{
+			"name": "Gilded Gaze of Garakus",
+			"source": "EpicSpells",
+			"page": 21,
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tiny gold statue of the caster"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your eyes glow with a shining light as everything before you is transformed into gold. Each creature in the affected area that you can see must succeed on a Constitution saving throw or be turned to gold and {@condition petrified}. On a successful save, a creature is instead {@condition restrained} for 1 minute as its body begins to turn to gold. At the end of each of its turns, an affected creature can repeat the saving throw. If it fails three such saving throws in this manner, it is {@condition petrified} and turned to gold. If it succeeds on three such saving throws in this manner, the effect ends.",
+				"This effect also transforms any unattended solid objects and structures that you can see in the area into gold."
+			],
+			"conditionInflict": [
+				"restrained"
+			]
 		}
 	]
 }
